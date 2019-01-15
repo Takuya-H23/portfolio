@@ -1,0 +1,21 @@
+header {
+    background-color: $header;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+// .logo-container::after {
+//     content: "Takuya Hirata";
+//     color: $secondary-font-color;
+//     font-size: 2em;
+//     margin-left: .5em;
+//     font-family: $primary-font-family;
+// }
+
+p {
+    color: $secondary-font-color;
+    font-size: 1.8em;
+    margin-left: .3em;
+    font-family: $primary-font-family;
+}
