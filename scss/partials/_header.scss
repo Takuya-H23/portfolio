@@ -1,21 +1,46 @@
 header {
     background-color: $header;
+    color: $secondary-font-color;
+    font-family: $primary-font-family;
     padding: 1em;
+}
+
+.header-line1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-// .logo-container::after {
-//     content: "Takuya Hirata";
-//     color: $secondary-font-color;
-//     font-size: 2em;
-//     margin-left: .5em;
-//     font-family: $primary-font-family;
-// }
-
-p {
-    color: $secondary-font-color;
-    font-size: 1.8em;
-    margin-left: .3em;
-    font-family: $primary-font-family;
+.name {  
+    font-size: 1.5em;
+    margin-left: .4em;
+    font-weight: 600;
 }
+
+.hamburger-menu {
+    margin-left: auto;
+    font-size: 1.45em;
+}
+
+nav {
+    display: block;
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+    margin-left: 2em;
+    font-size: 1.1em;
+    }
+
+    li:last-child {
+        margin-right: .5em;
+    }
+}
+
+
+
+
