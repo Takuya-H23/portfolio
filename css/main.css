@@ -411,13 +411,20 @@ body {
 header {
   background-color: #000118;
   color: #fff;
-  font-family: "Poppins", sans-serif;
-  padding: 1em; }
+  font-family: "Poppins", sans-serif; }
 
 .header-line1 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  padding: 1em; }
+
+.logo-container {
+  width: 2.5em; }
+
+object {
+  width: 100%;
+  height: 100%; }
 
 .name {
   font-size: 1.5em;
@@ -441,16 +448,7 @@ ul {
   ul li:last-child {
     margin-right: .5em; }
 
-.st0 {
-  fill: #000016; }
-
-.st1 {
-  fill: url(#SVGID_1_); }
-
-.st2 {
-  fill: url(#SVGID_2_); }
-
-#logo {
-  width: 2.2em; }
+.header-animation-container {
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
