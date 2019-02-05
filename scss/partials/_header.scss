@@ -32,23 +32,37 @@ object {
 }
 
 nav {
-    display: block;
+    @include flex(flex, column);
     margin-left: auto;
-}
+    position:fixed;
+    right: -400px;
+    width: 250px;
+    height: 500px;
+    top: 0;
+    background-color: $primary-background-color;
+    color: $primary-font-color;
 
-ul {
-    display: flex;
-    list-style-type: none;
+    .x-icon {
+        font-size: 1.5em;
+        margin: 1em;
+        text-align: right;
+    }
+
+    ul {
+        @include flex(flex, column);
+        list-style-type: none;
+        font-size: 1.2em;
+        margin-top: -2.35em;
+    }
 
     li {
-    margin-left: 2em;
-    font-size: 1.1em;
-    }
+        margin-left: .5em;
+        margin-bottom: .5em;
 
-    li:last-child {
-        margin-right: .5em;
     }
 }
+
+
 
 .header-animation-container {
     background-color: #000016;

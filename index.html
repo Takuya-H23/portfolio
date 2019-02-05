@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <meta name="author" content="Takuya Hirata">
     <title>Takuya Hirata</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <main>
         <header>
@@ -20,26 +22,62 @@
                     <object type="image/svg+xml" data="./img/logo.svg" alt="Takuya Hirata Logo"></object>
                 </div>
                 <h1 class="name">TAKUYA HIRATA</h1>
-                <div class="hamburger-menu">
+                <div class="hamburger-menu" id="hamburgerMenu">
                     <i class="fas fa-bars"></i>
                 </div>
-                <!-- <nav>
+                <nav id="headerNav">
+                    <i class="fas fa-times x-icon" id="xIcon"></i>
                     <ul>
                         <li>ABOUT</li>
                         <li>PORTFOLIO</li>
                         <li>CONTACT</li>
                     </ul>
-                </nav> -->
+                </nav>
             </div>
 
             <div class="header-animation-container">
                 <object type="image/svg+xml" data="./img/header_hello_world2.svg"></object>
             </div>
         </header>
-        
+
+        <section class="about">
+            <h2>About</h2>
+            <div class="intro">
+                <p>My name is Takuya Hirata. I am passionate about web development and have an interest in learning new
+                    ways and techniques to improve my projects.
+                </p>
+
+                <p>I am studying web design and front-end web development in college, and some frameworks and back-end
+                    development via online programming courses. This allows me to understand web development deeply and
+                    have the chance to practice coding and to further enhance my knowledge of the subject.
+                </p>
+            </div>
+
+            <div class="education">
+                <h3>Education</h3>
+                <p class="subtitle-css">Durham College</p>
+                <p>Contemporary Web Design</p>
+                <p>January 2018 - present</p>
+            </div>
+
+            <div class="experience">
+                <h3>Experience</h3>
+                <div class="job-wrapper">
+                    <p class="subtitle-css">Durham College MAD Xscape Room</p>
+                    <p>Responsible for creating Leaderboard page (front-end).</p>
+                </div>
+                <div class="job-wrapper">
+                    <p class="subtitle-css">No Frills</p>
+                    <p>Responsible for produce department.</p>
+                    <p>September 2018 - present</p>
+                </div>
+            </div>
+        </section>
+
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
