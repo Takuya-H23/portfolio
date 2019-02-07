@@ -496,4 +496,28 @@ nav {
 .job-wrapper {
   margin-bottom: 1.5em; }
 
+.portfolio {
+  color: #908f8f;
+  padding: 1.5em; }
+  .portfolio h2 {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #b4b4b4;
+    font-size: 1.3em;
+    font-weight: 700; }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(327px, 370px));
+  grid-gap: 1em; }
+  .portfolio-grid > div {
+    border: 1px solid; }
+
+.mad {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.portfolio-wrapper .portfolio-img {
+  height: 100px;
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

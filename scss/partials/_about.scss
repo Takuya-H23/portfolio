@@ -1,14 +1,5 @@
 .about {
-    color: $primary-font-color;
-    padding: 1.5em;
-
-    & h2 {
-        font-family: $primary-font-family;
-        padding-bottom: .5em;
-        border-bottom: 2px solid $border;
-        font-size: 1.3em;
-        font-weight: 700;
-    }
+    @include section-base();
 
     .subtitle-css {
         font-size: 1.05em;
