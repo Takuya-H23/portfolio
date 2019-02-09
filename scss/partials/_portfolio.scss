@@ -4,22 +4,15 @@
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(327px, 370px));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 370px));
     grid-gap: 1em;
-
-    & > div {
-        border: 1px solid;
-    }
 }
 
 .mad {
-    background-color: rgba(0,0,0,.9);
-}
-
-.portfolio-wrapper {
-
-    & .portfolio-img {
-        height: 100px;
+    background-color: rgba(0,0,0,.85);
+    & img {
         width: 100%;
     }
 }
+
+

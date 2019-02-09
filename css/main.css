@@ -454,7 +454,8 @@ nav {
   nav .x-icon {
     font-size: 1.5em;
     margin: 1em;
-    text-align: right; }
+    text-align: right;
+    z-index: 100; }
   nav ul {
     display: flex;
     flex-direction: column;
@@ -508,16 +509,12 @@ nav {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(327px, 370px));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 370px));
   grid-gap: 1em; }
-  .portfolio-grid > div {
-    border: 1px solid; }
 
 .mad {
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.portfolio-wrapper .portfolio-img {
-  height: 100px;
-  width: 100%; }
+  background-color: rgba(0, 0, 0, 0.85); }
+  .mad img {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
