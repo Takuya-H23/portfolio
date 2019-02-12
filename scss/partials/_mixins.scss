@@ -16,6 +16,10 @@
         border-bottom: 2px solid $border;
         font-size: 1.3em;
         font-weight: 700;
+
+        @include mediaQuery($medium) {
+            font-size: 1.8em;
+        }
     }
 }
 

@@ -44,16 +44,17 @@ nav {
 
     .x-icon {
         font-size: 1.5em;
-        margin: 1.2em;
+        display: block;
+        margin-top: .7em;
+        margin-right: .7em;
+        margin-bottom: .7em;
         text-align: right;
         z-index: 100;
     }
 
     ul {
-        @include flex(flex, column);
         list-style-type: none;
         font-size: 1.2em;
-        margin-top: -3.2em;
     }
 
     li {

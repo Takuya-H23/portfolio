@@ -43,72 +43,68 @@
 
         <section class="about">
             <h2>About</h2>
-            <div class="intro">
-                <p>My name is Takuya Hirata. I am passionate about web development and have an interest in learning new
-                    ways and techniques to improve my projects.
-                </p>
+            <div class="about-container">
+                <div class="intro">
+                    <p>My name is Takuya Hirata. I am passionate about web development and have an interest in learning
+                        new
+                        ways and techniques to improve my projects.
+                    </p>
 
-                <p>I am studying web design and front-end web development in college, and some frameworks and back-end
-                    development via online programming courses. This allows me to understand web development deeply and
-                    have the chance to practice coding and to further enhance my knowledge of the subject.
-                </p>
-            </div>
-
-            <div class="education">
-                <h3>Education</h3>
-                <p class="subtitle-css">Durham College</p>
-                <p>Contemporary Web Design</p>
-                <p>January 2018 - present</p>
-            </div>
-
-            <div class="experience">
-                <h3>Experience</h3>
-                <div class="job-wrapper">
-                    <p class="subtitle-css">Durham College MAD Xscape Room</p>
-                    <p>Responsible for creating Leaderboard page (front-end).</p>
+                    <p>I am studying web design and front-end web development in college, and some frameworks and
+                        back-end
+                        development via online programming courses. This allows me to understand web development deeply
+                        and
+                        have the chance to practice coding and to further enhance my knowledge of the subject.
+                    </p>
                 </div>
-                <div class="job-wrapper">
-                    <p class="subtitle-css">No Frills</p>
-                    <p>Responsible for produce department.</p>
-                    <p>September 2018 - present</p>
+
+                <div class="education">
+                    <h3>Education</h3>
+                    <p class="subtitle-css">Durham College</p>
+                    <p>Contemporary Web Design</p>
+                    <p>January 2018 - present</p>
+                </div>
+
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="job-wrapper">
+                        <p class="subtitle-css">Durham College MAD Xscape Room</p>
+                        <p>Responsible for creating Leaderboard page (front-end).</p>
+                    </div>
+                    <div class="job-wrapper">
+                        <p class="subtitle-css">No Frills</p>
+                        <p>Responsible for produce department.</p>
+                        <p>September 2018 - present</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="portfolio">
             <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="mad portfolio-wrapper">
-                    <!-- <img class="portfolio-img" src="./img/main_logo.png" alt="MAD Xscape"> -->
-                    <div class="overlay">
-                        <p class="description">View Project</p>
-                    </div>
+            <div class="portfolio-container">
+                <div class="portfolio-titles">
+                    <ul class="title-list">
+                        <a href="#">
+                            <li>MAD XSCAPE ROOM</li>
+                        </a>
+                        <a href="#">
+                            <li>JS GAMING</li>
+                        </a>
+                        <a href="#">
+                            <li>WEB DEVELOPMENT INFOGRAPHIC</li>
+                        </a>
+                        <a href="#">
+                            <li>LAKERIDGE HEALTH</li>
+                        </a>
+                        <a href="#">
+                            <li>CYBER CHAT APPLICATION</li>
+                        </a>
+                    </ul>
                 </div>
-                <div class="js">
-                    <!-- <object class="svg-thumbnail" data="./img/js_game.svg" type="image/svg+xml"></object> -->
-                    <div class="overlay">
-                        <p class="description">View Project</p>
-                    </div>
-                </div>
-                <div>
-                    <object class="svg-thumbnail" data="./img/infographic.svg" type="image/svg+xml"></object>
-                    <div class="overlay">
-                        <p class="description">View Project</p>
-                    </div>
-                </div>
-                <div>
-                    <object class="svg-thumbnail" data="./img/d3.svg" type="image/svg+xml"></object>
-                    <div class="overlay">
-                        <p class="description">View Project</p>
-                    </div>
-                </div>
-                <div>
-                    <object class="svg-thumbnail" data="./img/chat_app.svg" type="image/svg+xml"></object>
-                    <div class="overlay">
-                        <p class="description">View Project</p>
-                    </div>
-                </div>
+                <div class="portfolio-placeholoder"></div>
             </div>
+
         </section>
 
         <section class="contact">
@@ -125,7 +121,7 @@
                         <i class="fab fa-linkedin contact-icon"></i>
                     </a>
                 </div>
-                <form method="POST" id="contactForm" action="php.mail">
+                <form method="POST" id="contactForm" action="php.mail" class="contact-form">
                     <label for="name">Name: </label>
                     <input id="name" type="text" name="user_name" required>
                     <label for="email">Email:</label>

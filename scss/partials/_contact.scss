@@ -4,27 +4,61 @@
 
 .contact-container {
     margin-top: .9em;
+
+    @include mediaQuery($medium) {
+        @include flex(flex, null, wrap);
+    }
 }
 
 .contact-icon {
     font-size: 2em;
     color: $primary-font-color;
-    margin-top: .2em;
+    margin-top: .3em;
+
+    @include mediaQuery($medium) {
+        margin-top: .5em;
+    }
+}
+
+.info {
+    @include mediaQuery($medium) {
+        flex: 0 50%;
+    }
+}
+
+.info h3 {
+    @include mediaQuery($medium) {
+    }
 }
 
 .info p {
     margin-top: .5em;
+    @include mediaQuery($medium) {
+        margin-top: 1em;
+    }
 }
 
 #contactForm {
 
+    @include mediaQuery($medium) {
+        flex: 0 50%;
+        padding: 0 1em;
+    }
+
     & label {
         display: block;
         margin-top: 1em;
+
+        @include mediaQuery($medium) {
+            margin-top: 0;
+        }
     }
 
     & input {
         width: 100%;
+        @include mediaQuery($medium) {
+            margin-bottom: 1.5em;
+        }
     }
 
     & textarea {
