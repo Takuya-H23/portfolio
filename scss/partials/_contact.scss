@@ -13,7 +13,7 @@
 .contact-icon {
     font-size: 2em;
     color: $primary-font-color;
-    margin-top: .3em;
+    margin-top: .5em;
 
     @include mediaQuery($medium) {
         margin-top: .5em;
@@ -32,7 +32,7 @@
 }
 
 .info p {
-    margin-top: .5em;
+    margin-top: 1em;
     @include mediaQuery($medium) {
         margin-top: 1em;
     }
@@ -56,6 +56,10 @@
 
     & input {
         width: 100%;
+        height: 1.5em;
+        border: 0;
+        font-size: 1.1em;
+        background-color: $field-background-color;
         @include mediaQuery($medium) {
             margin-bottom: 1.5em;
         }
@@ -63,7 +67,14 @@
 
     & textarea {
         width: 100%;
-        border: 1px solid $border;
+        font-size: 1.1em;
+        border: 0;
+        background-color: $field-background-color;
+    }
+
+    & p {
+        text-align: center;
+        margin-top: 1em;
     }
 
     & #submitBtn {
