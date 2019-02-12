@@ -1,0 +1,13 @@
+footer {
+    margin-top: 2em;
+    background-color: $header;
+    padding: 1em;
+
+    & p {
+        color: #fff;
+        text-align: center;
+        font-family: $primary-font-family;
+        line-height: 1.5em;
+        font-size: .8em;
+    }
+}

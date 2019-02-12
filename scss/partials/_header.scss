@@ -44,7 +44,7 @@ nav {
 
     .x-icon {
         font-size: 1.5em;
-        margin: 1em;
+        margin: 1.2em;
         text-align: right;
         z-index: 100;
     }
@@ -53,13 +53,13 @@ nav {
         @include flex(flex, column);
         list-style-type: none;
         font-size: 1.2em;
-        margin-top: -2.35em;
+        margin-top: -3.2em;
     }
 
     li {
-        margin-left: .5em;
-        margin-bottom: .5em;
-
+        padding: .5em;
+        margin-bottom: .3em;
+        border: 1px solid $border;
     }
 }
 

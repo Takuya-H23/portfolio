@@ -18,3 +18,9 @@
         font-weight: 700;
     }
 }
+
+@mixin mediaQuery($breakPoint) {
+    @media (min-width: $breakPoint) {
+        @content
+    }
+}

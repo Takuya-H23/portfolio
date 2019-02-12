@@ -1,0 +1,45 @@
+.contact {
+    @include section-base();
+}
+
+.contact-container {
+    margin-top: .9em;
+}
+
+.contact-icon {
+    font-size: 2em;
+    color: $primary-font-color;
+    margin-top: .2em;
+}
+
+.info p {
+    margin-top: .5em;
+}
+
+#contactForm {
+
+    & label {
+        display: block;
+        margin-top: 1em;
+    }
+
+    & input {
+        width: 100%;
+    }
+
+    & textarea {
+        width: 100%;
+        border: 1px solid $border;
+    }
+
+    & #submitBtn {
+        display: block;
+        width: 70%;
+        padding: .5em;
+        margin: 1em auto 0;
+        background-color: $primary-font-color;
+        color: #fff;
+        font-family: $secondary-font-family;
+        text-align: center;
+    }
+}

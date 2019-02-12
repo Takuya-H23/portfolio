@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Takuya Hirata">
     <title>Takuya Hirata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700" rel="stylesheet">
@@ -77,23 +78,70 @@
         <section class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
-                <div class="mad">
-                    <img class="portfolio-img" src="./img/main_logo_copy.png" alt="MAD Xscape">
+                <div class="mad portfolio-wrapper">
+                    <!-- <img class="portfolio-img" src="./img/main_logo.png" alt="MAD Xscape"> -->
+                    <div class="overlay">
+                        <p class="description">View Project</p>
+                    </div>
                 </div>
-                <div>
-                    <object class="svg-thumbnail" data="./img/js_game.svg" type="image/svg+xml"></object>
+                <div class="js">
+                    <!-- <object class="svg-thumbnail" data="./img/js_game.svg" type="image/svg+xml"></object> -->
+                    <div class="overlay">
+                        <p class="description">View Project</p>
+                    </div>
                 </div>
                 <div>
                     <object class="svg-thumbnail" data="./img/infographic.svg" type="image/svg+xml"></object>
+                    <div class="overlay">
+                        <p class="description">View Project</p>
+                    </div>
                 </div>
                 <div>
                     <object class="svg-thumbnail" data="./img/d3.svg" type="image/svg+xml"></object>
+                    <div class="overlay">
+                        <p class="description">View Project</p>
+                    </div>
                 </div>
                 <div>
                     <object class="svg-thumbnail" data="./img/chat_app.svg" type="image/svg+xml"></object>
+                    <div class="overlay">
+                        <p class="description">View Project</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="info">
+                    <h3>Takuya Hirata</h3>
+                    <p><strong>Phone: </strong>(905) 922-4637</p>
+                    <p><strong>Email: </strong>takuyahirata4@gmail.com</p>
+                    <a href="https://github.com/Takuya-H23" target="_blank">
+                        <i class="fab fa-github-square contact-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/takuya-hirata-1a6562169/" target="_blank">
+                        <i class="fab fa-linkedin contact-icon"></i>
+                    </a>
+                </div>
+                <form method="POST" id="contactForm" action="php.mail">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" name="user_name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_mail" required>
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="user_subject" required>
+                    <label for="content">Message:</label>
+                    <textarea name="user_massage" id="message" cols="30" rows="10" required></textarea>
+                    <p value="Send Message" id="submitBtn">Send Message</p>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>Thank you for visiting my portfolio website.<br> Message me if you have an interest.</p>
+        </footer>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
