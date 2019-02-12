@@ -142,8 +142,34 @@ nav {
   display: none; }
   @media (min-width: 768px) {
     .portfolio-placeholoder {
+      margin-top: 1em;
       display: block;
-      flex: 0 50%; } }
+      flex: 0 50%; }
+      .portfolio-placeholoder h4 {
+        font-weight: bold; } }
+
+@media (min-width: 768px) {
+  .thumbnail-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 175px);
+    grid-gap: .5em;
+    margin-top: .5em; }
+    .thumbnail-wrapper img {
+      width: 100%;
+      border: 1px solid #b4b4b4; } }
+
+.desc {
+  margin-top: .5em; }
+
+.skills-wrapper {
+  margin-top: .5em; }
+  .skills-wrapper span {
+    display: inline-block;
+    padding: .3em;
+    background-color: #eeeeee;
+    border-radius: 5% 5%;
+    margin-right: .3em;
+    margin-bottom: .5em; }
 
 .contact {
   color: #908f8f;
@@ -198,11 +224,13 @@ nav {
   height: 1.5em;
   border: 0;
   font-size: 1.1em;
+  padding: .2em;
   background-color: #e1dede; }
   @media (min-width: 768px) {
     #contactForm input {
       margin-bottom: 1.5em; } }
 #contactForm textarea {
+  padding: .2em;
   width: 100%;
   font-size: 1.1em;
   border: 0;

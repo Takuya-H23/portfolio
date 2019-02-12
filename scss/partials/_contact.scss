@@ -59,6 +59,7 @@
         height: 1.5em;
         border: 0;
         font-size: 1.1em;
+        padding: .2em;
         background-color: $field-background-color;
         @include mediaQuery($medium) {
             margin-bottom: 1.5em;
@@ -66,6 +67,7 @@
     }
 
     & textarea {
+        padding: .2em;
         width: 100%;
         font-size: 1.1em;
         border: 0;
