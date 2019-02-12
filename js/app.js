@@ -83,7 +83,7 @@
 
         let emailRequest = $.ajax({
             type: 'POST',
-            url: 'mail.php',
+            url: 'services/mail.php',
             data: {
                 name: name,
                 email: email,
