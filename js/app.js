@@ -36,15 +36,29 @@
 
     portfolio.push(new Portfolio(
         'MAD XSCAPE ROOM',
-        ['./img/rps.png', './img/memorycard.png'],
-        'MAD Xcsape Room project for Durham College. I was responsible for creating dynamic leaderborad page.',
+        ['./img/main_logo.jpg', './img/main_logo.jpg'],
+        'MAD Xcsape Room project for Durham College. I was responsible for creating a dynamic leaderborad page.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Photoshop']
+    ));
+
+    portfolio.push(new Portfolio(
+        'CYBER CHAT APPLICATION',
+        ['./img/rps.png', './img/memorycard.png'],
+        'Real time chat application using Node.js and Express',
+        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
+    ));
+
+    portfolio.push(new Portfolio(
+        'GREAT PLACE IN CANADA',
+        ['./img/rps.png', './img/memorycard.png'],
+        'Dynamically display great places I have been by creating and serving JSON file in Node.js',
+        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
 
     portfolio.push(new Portfolio(
         'JS GAMING',
         ['./img/rps.png', './img/memorycard.png'],
-        'Rock Paper Scissors and Memory Card Game.',
+        'Rock Paper Scissors and Memory Card Game with svg animation.',
         ['HTML', 'CSS', 'SASS', 'JavaScript', 'jQuery', 'Illustrator']
     ));
 
@@ -58,16 +72,11 @@
     portfolio.push(new Portfolio(
         'LAKERIDGE HEALTH',
         ['./img/lakeridge1.png', './img/lakeridge2.png'],
-        'Data visualization project to display Lakeridge projects.',
+        'Data visualization project to display Lakeridge projects using D3.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'D3']
     ));
 
-    // portfolio.push(new Portfolio(
-    //     'CYBER CHAT APPLICATION (Coming soon!)',
-    //     [],
-    //     'Cybar chat application using Node.js',
-    //     ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
-    // ));
+    
     /**
      *  Hamburger Menu Animation
      */
@@ -109,7 +118,7 @@
         if(eventTarget.nodeName === 'LI') {
             let elementTitle = e.target.innerText; 
             let target = portfolio.filter(item => item.title === elementTitle);
-            let borderWidth = elementTitle.length * 11;
+            let borderWidth = elementTitle.length * 12.5;
             let border = e.target.nextElementSibling;
             console.log(target);
             let title = target[0].title;

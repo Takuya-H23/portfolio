@@ -10,11 +10,12 @@ h3 {
   font-weight: 600; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 header {
   background-color: #000118;
-  color: #fff;
+  color: #4a4949;
   font-family: "Poppins", sans-serif; }
 
 .header-line1 {
@@ -25,9 +26,15 @@ header {
   @media (min-width: 768px) {
     .header-line1 {
       align-items: flex-start; } }
+  @media (min-width: 992px) {
+    .header-line1 {
+      padding: 2em; } }
 
 .logo-container {
   width: 2.5em; }
+  @media (min-width: 992px) {
+    .logo-container {
+      width: 3em; } }
 
 object {
   width: 100%;
@@ -36,10 +43,14 @@ object {
 .name {
   font-size: 1.5em;
   margin-left: .4em;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #fff; }
   @media (min-width: 768px) {
     .name {
       align-self: center; } }
+  @media (min-width: 992px) {
+    .name {
+      font-size: 2em; } }
 
 .hamburger-menu {
   margin-left: auto;
@@ -64,7 +75,8 @@ nav {
       position: static;
       background-color: inherit;
       height: 0;
-      margin-top: .5em; } }
+      margin-top: .5em;
+      width: auto; } }
   nav .x-icon {
     font-size: 1.5em;
     display: block;
@@ -93,6 +105,9 @@ nav {
         font-size: .8em;
         color: #fff;
         margin-bottom: 0; } }
+    @media (min-width: 992px) {
+      nav li {
+        font-size: 1.1em; } }
 
 .header-animation-container {
   background-color: #000016;
@@ -101,6 +116,9 @@ nav {
 .about {
   color: #908f8f;
   padding: 1.5em; }
+  @media (min-width: 992px) {
+    .about {
+      padding: 3em; } }
   .about h2 {
     font-family: "Poppins", sans-serif;
     padding-bottom: .5em;
@@ -110,11 +128,17 @@ nav {
     @media (min-width: 768px) {
       .about h2 {
         font-size: 1.8em; } }
+    @media (min-width: 992px) {
+      .about h2 {
+        font-size: 2.2em; } }
   .about .subtitle-css {
     font-size: 1.05em; }
     @media (min-width: 768px) {
       .about .subtitle-css {
         font-size: 1.2em; } }
+    @media (min-width: 992px) {
+      .about .subtitle-css {
+        font-size: 1.3em; } }
 
 @media (min-width: 768px) {
   .about-container {
@@ -132,6 +156,11 @@ nav {
     .intro p {
       font-size: 1.1em;
       margin-top: .8em; } }
+  @media (min-width: 992px) {
+    .intro p {
+      font-size: 1.25em;
+      padding-right: 15em;
+      line-height: 1.5em; } }
 
 .education, .experience {
   margin-top: 2em; }
@@ -139,16 +168,25 @@ nav {
     .education, .experience {
       flex: 1 50%;
       margin-top: 4em; } }
+  @media (min-width: 992px) {
+    .education, .experience {
+      margin-top: 5em; } }
   .education h3, .experience h3 {
     margin-bottom: 1em; }
     @media (min-width: 768px) {
       .education h3, .experience h3 {
         font-size: 1.5em; } }
+    @media (min-width: 992px) {
+      .education h3, .experience h3 {
+        font-size: 1.8em; } }
   .education p, .experience p {
     margin-bottom: .3em; }
     @media (min-width: 768px) {
       .education p, .experience p {
         font-size: 1.2em; } }
+    @media (min-width: 992px) {
+      .education p, .experience p {
+        font-size: 1.3em; } }
 
 .job-wrapper {
   margin-bottom: 1.5em; }
@@ -156,6 +194,9 @@ nav {
 .portfolio {
   color: #908f8f;
   padding: 1.5em; }
+  @media (min-width: 992px) {
+    .portfolio {
+      padding: 3em; } }
   .portfolio h2 {
     font-family: "Poppins", sans-serif;
     padding-bottom: .5em;
@@ -165,8 +206,11 @@ nav {
     @media (min-width: 768px) {
       .portfolio h2 {
         font-size: 1.8em; } }
+    @media (min-width: 992px) {
+      .portfolio h2 {
+        font-size: 2.2em; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .portfolio-container {
     display: flex;
     flex-wrap: wrap; } }
@@ -181,6 +225,10 @@ nav {
   @media (min-width: 768px) {
     .title-list li {
       font-size: 1.1em; } }
+  @media (min-width: 992px) {
+    .title-list li {
+      font-size: 1.25em;
+      padding: 1.5em 0 0 0; } }
 .title-list .border {
   width: 0;
   height: .2em;
@@ -200,20 +248,34 @@ nav {
     @media (min-width: 768px) and (min-width: 768px) {
       .portfolio-placeholoder h4 {
         font-size: 1.1em; } }
+    @media (min-width: 768px) and (min-width: 992px) {
+      .portfolio-placeholoder h4 {
+        font-size: 1.25em; } }
+
+  @media (min-width: 992px) {
+    .portfolio-placeholoder {
+      margin-top: 2em; } }
 
 @media (min-width: 768px) {
   .thumbnail-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 175px);
     grid-gap: .5em;
-    margin-top: 1em; }
-    .thumbnail-wrapper img {
-      width: 100%;
-      border: 1px solid #b4b4b4; } }
+    margin-top: 1em; } }
+@media (min-width: 992px) {
+  .thumbnail-wrapper {
+    grid-template-columns: repeat(2, 300px); } }
+.thumbnail-wrapper img {
+  width: 100%;
+  border: 1px solid #b4b4b4; }
 
 .desc {
   margin-top: 1em;
   font-size: 1.1em; }
+  @media (min-width: 992px) {
+    .desc {
+      font-size: 1.2em;
+      margin-top: 1.2em; } }
 
 .skills-wrapper {
   margin-top: 1em; }
@@ -224,10 +286,17 @@ nav {
     border-radius: 5% 5%;
     margin-bottom: .5em;
     margin-right: .3em; }
+    @media (min-width: 992px) {
+      .skills-wrapper span {
+        font-size: 1.1em;
+        margin-bottom: .8em; } }
 
 .contact {
   color: #908f8f;
   padding: 1.5em; }
+  @media (min-width: 992px) {
+    .contact {
+      padding: 3em; } }
   .contact h2 {
     font-family: "Poppins", sans-serif;
     padding-bottom: .5em;
@@ -237,6 +306,9 @@ nav {
     @media (min-width: 768px) {
       .contact h2 {
         font-size: 1.8em; } }
+    @media (min-width: 992px) {
+      .contact h2 {
+        font-size: 2.2em; } }
 
 .contact-container {
   margin-top: .9em; }
@@ -244,6 +316,9 @@ nav {
     .contact-container {
       display: flex;
       flex-wrap: wrap; } }
+  @media (min-width: 992px) {
+    .contact-container {
+      margin-top: 1.5em; } }
 
 .contact-icon {
   font-size: 2em;

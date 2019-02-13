@@ -8,6 +8,10 @@
     @include mediaQuery($medium) {
         @include flex(flex, null, wrap);
     }
+
+    @include mediaQuery($large) {
+        margin-top:1.5em;
+    }
 }
 
 .contact-icon {
@@ -46,7 +50,6 @@
 
     @include mediaQuery($medium) {
         flex: 0 50%;
-        // padding: 0 1em
     }
 
     & label {

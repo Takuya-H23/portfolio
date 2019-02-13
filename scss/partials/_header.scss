@@ -13,10 +13,18 @@ header {
     @include mediaQuery($medium) {
         align-items: flex-start
     }
+
+    @include mediaQuery($large) {
+        padding: 2em;
+    }
 }
 
 .logo-container {
     width: 2.5em;
+
+    @include mediaQuery($large) {
+        width: 3em;
+    }
 }
 
 object {
@@ -28,9 +36,14 @@ object {
     font-size: 1.5em;
     margin-left: .4em;
     font-weight: 600;
+    color: #fff;
 
     @include mediaQuery($medium) {
         align-self: center;
+    }
+
+    @include mediaQuery($large) {
+        font-size: 2em;
     }
 }
 
@@ -59,6 +72,7 @@ nav {
         background-color: inherit;
         height: 0;
         margin-top: .5em;
+        width: auto;
     }
 
     .x-icon {
@@ -94,6 +108,10 @@ nav {
             font-size: .8em;
             color: #fff;
             margin-bottom: 0;
+        }
+
+        @include mediaQuery($large) {
+            font-size: 1.1em;
         }
     }
 }

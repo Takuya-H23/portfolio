@@ -4,9 +4,7 @@
 
 .portfolio-container {
     @include mediaQuery($medium) {
-        @include mediaQuery($medium) {
-            @include flex(flex, null, wrap);
-        }
+        @include flex(flex, null, wrap);
     }
 }
 
@@ -22,6 +20,11 @@
         color: $primary-font-color;
         @include mediaQuery($medium) {
             font-size: 1.1em;
+        }
+
+        @include mediaQuery($large) {
+            font-size: 1.25em;
+            padding: 1.5em 0 0 0;
         }
     }
 
@@ -46,7 +49,15 @@
             @include mediaQuery($medium) {
                 font-size: 1.1em;
             }
+
+            @include mediaQuery($large) {
+                font-size: 1.25em;
+            }
         }
+    }
+
+    @include mediaQuery($large) {
+        margin-top: 2em;
     }
 }
 
@@ -56,17 +67,26 @@
         grid-template-columns: repeat(2, 175px);
         grid-gap: .5em;
         margin-top: 1em;
+    }
 
-        & img {
-            width: 100%;
-            border: 1px solid $border;
-        }
+    @include mediaQuery($large) {
+        grid-template-columns: repeat(2, 300px); 
+    }
+
+    & img {
+        width: 100%;
+        border: 1px solid $border;
     }
 }
 
 .desc {
     margin-top: 1em;
     font-size: 1.1em;
+
+    @include mediaQuery($large) {
+        font-size: 1.2em;
+        margin-top: 1.2em;
+    }
 }
 
 .skills-wrapper {
@@ -79,6 +99,11 @@
         border-radius: 5% 5%;
         margin-bottom: .5em;
         margin-right: .3em;
+
+        @include mediaQuery($large) {
+            font-size: 1.1em;
+            margin-bottom: .8em;
+        }
     }
 }
 
