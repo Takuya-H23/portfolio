@@ -50,24 +50,24 @@
 
     portfolio.push(new Portfolio(
         'WEB DEVELOPMENT INFOGRAPHIC',
-        ['./img/rps.png', './img/memorycard.png'],
+        ['./img/languages.png', './img/skills.png'],
         'Infographic project to show what front-end web developers do.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Illustrator']
     ));
 
     portfolio.push(new Portfolio(
         'LAKERIDGE HEALTH',
-        ['./img/rps.png', './img/memorycard.png'],
+        ['./img/lakeridge1.png', './img/lakeridge2.png'],
         'Data visualization project to display Lakeridge projects.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'D3']
     ));
 
-    portfolio.push(new Portfolio(
-        'CYBER CHAT APPLICATION',
-        ['./img/rps.png', './img/memorycard.png'],
-        'Cybar chat application using Node.js',
-        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
-    ));
+    // portfolio.push(new Portfolio(
+    //     'CYBER CHAT APPLICATION (Coming soon!)',
+    //     [],
+    //     'Cybar chat application using Node.js',
+    //     ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
+    // ));
     /**
      *  Hamburger Menu Animation
      */
@@ -104,42 +104,58 @@
      * Hover Animation for Portfolio 
      */
     titleList.addEventListener('mouseover', (e) => {
-        let elementTitle = e.target.innerText;
-        let target = portfolio.filter(item => item.title === elementTitle);
-        let title = target[0].title;
-        let portfolioHTML = '';
+        let eventTarget = e.target;
+        console.log(eventTarget);
+        if(eventTarget.nodeName === 'LI') {
+            let elementTitle = e.target.innerText; 
+            let target = portfolio.filter(item => item.title === elementTitle);
+            let borderWidth = elementTitle.length * 11;
+            let border = e.target.nextElementSibling;
+            console.log(target);
+            let title = target[0].title;
+            let portfolioHTML = '';
 
-        portfolioHTML = `<h4>${title}</h4>`;
-        portfolioHTML += '<div class="thumbnail-wrapper">';
-        target[0].images.forEach(image => {
-            portfolioHTML += `<div><img src="${image}" alt="${title}"></div>`; 
-        });
-        portfolioHTML += `
+            TweenMax.to(border, 1, {
+                width: borderWidth
+            });
+
+            TweenMax.set(portfolioWrapper, {
+                opacity: 0
+            });
+
+            portfolioHTML = `<h4>${title}</h4>`;
+            portfolioHTML += '<div class="thumbnail-wrapper">';
+            target[0].images.forEach(image => {
+                portfolioHTML += `<div><img src="${image}" alt="${title}"></div>`;
+            });
+            portfolioHTML += `
             </div>
             <p class="desc">${target[0].description}</p>
             <div class="skills-wrapper">
         `;
-        target[0].skills.forEach(skill => {
-            portfolioHTML += `<span>${skill}</span>`;
-        });
-        portfolioHTML += '</div>';
+            target[0].skills.forEach(skill => {
+                portfolioHTML += `<span>${skill}</span>`;
+            });
+            portfolioHTML += '</div>';
 
-        portfolioWrapper.innerHTML = portfolioHTML;
+            portfolioWrapper.innerHTML = portfolioHTML;
+
+            TweenMax.to(portfolioWrapper, 2, {
+                opacity: 1
+            });
+        }
+        
     });
 
-    // <h4>JS GAMING</h4>
-    //     <div class="thumbnail-wrapper">
-    //         <div><img src="./img/memorycard.png" alt=""></div>
-    //             <div><img src="./img/rps.png" alt=""></div>
-    //             </div>
-    //             <p class="desc">Christmas Memory Card Game and Rock Paper Scissors Game.</p>
-    //             <div class="skills-wrapper">
-    //                 <span>HTML</span>
-    //                 <span>CSS</span>
-    //                 <span>JavaScript</span>
-    //                 <span>jQuery</span>
-    //                 <span>Illustrator</span>
-    //             </div>
+    titleList.addEventListener('mouseout', (e) => {
+        let eventTarget = e.target;
+        if(eventTarget.nodeName === 'LI') {
+            let border = e.target.nextElementSibling;
+            TweenMax.to(border, 1, {
+                width: 0
+            }); 
+        }
+    });
 
     /**
      * Ajax for Sending Email
@@ -154,24 +170,28 @@
         let subject = $('#subject').val();
         let message = $('#message').val();
 
-        let emailRequest = $.ajax({
-            type: 'POST',
-            url: 'services/mail.php',
-            data: {
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            },
-        });
+        if(name.length > 0 && email.length > 0 && subject.length > 0 && message.length > 0) {
+            let emailRequest = $.ajax({
+                type: 'POST',
+                url: 'services/mail.php',
+                data: {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                },
+            });
 
-        emailRequest.done(function() {
-            alert('successful');
-        });
-    
-        emailRequest.fail(function (jqXHR, textStatus) {
-            alert("Something went Wrong!" + textStatus + '/' + jqXHR.status);
-        });
+            emailRequest.done(function () {
+                alert('Thank you for the message');
+            });
+
+            emailRequest.fail(function (jqXHR, textStatus) {
+                alert("Something went Wrong!" + textStatus + '/' + jqXHR.status);
+            });
+        } else {
+            alert('Please fill all the fields');
+        }
     }); 
 
 }());

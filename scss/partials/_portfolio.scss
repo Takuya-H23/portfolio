@@ -20,6 +20,16 @@
     & li {
         padding: 1em 0 0 0;
         color: $primary-font-color;
+        @include mediaQuery($medium) {
+            font-size: 1.1em;
+        }
+    }
+
+    & .border {
+        width: 0;
+        height: .2em;
+        background-color: $border;
+        margin-top: .2em;
     }
 }
 
@@ -29,10 +39,13 @@
         margin-top: 1em;
         display: block;
         flex: 0 50%;
+        opacity: 0;
 
         & h4 {
-            // font-size: 1.5em;
             font-weight: bold;
+            @include mediaQuery($medium) {
+                font-size: 1.1em;
+            }
         }
     }
 }
@@ -42,7 +55,7 @@
         display: grid;
         grid-template-columns: repeat(2, 175px);
         grid-gap: .5em;
-        margin-top: .5em;
+        margin-top: 1em;
 
         & img {
             width: 100%;
@@ -52,19 +65,20 @@
 }
 
 .desc {
-    margin-top: .5em;
+    margin-top: 1em;
+    font-size: 1.1em;
 }
 
 .skills-wrapper {
-    margin-top: .5em;
+    margin-top: 1em;
 
     span {
         display: inline-block;
         padding: .3em;
         background-color: $skill-background-color;
         border-radius: 5% 5%;
-        margin-right: .3em;
         margin-bottom: .5em;
+        margin-right: .3em;
     }
 }
 

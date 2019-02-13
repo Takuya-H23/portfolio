@@ -17,6 +17,8 @@
 
     @include mediaQuery($medium) {
         margin-top: .5em;
+        font-size: 2.5em;
+        margin-right: .2em;
     }
 }
 
@@ -28,6 +30,7 @@
 
 .info h3 {
     @include mediaQuery($medium) {
+        font-size: 1.3em;
     }
 }
 
@@ -35,6 +38,7 @@
     margin-top: 1em;
     @include mediaQuery($medium) {
         margin-top: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -42,7 +46,7 @@
 
     @include mediaQuery($medium) {
         flex: 0 50%;
-        padding: 0 1em;
+        // padding: 0 1em
     }
 
     & label {
@@ -51,6 +55,7 @@
 
         @include mediaQuery($medium) {
             margin-top: 0;
+            font-size: 1.1em;
         }
     }
 
@@ -63,6 +68,7 @@
         background-color: $field-background-color;
         @include mediaQuery($medium) {
             margin-bottom: 1.5em;
+            height: 1.7em;
         }
     }
 
@@ -88,5 +94,10 @@
         color: #fff;
         font-family: $secondary-font-family;
         text-align: center;
+
+        @include mediaQuery($medium) {
+            padding: .5em;
+            font-size: .8em;
+        }
     }
 }

@@ -9,6 +9,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 1em;
+
+    @include mediaQuery($medium) {
+        align-items: flex-start
+    }
 }
 
 .logo-container {
@@ -24,11 +28,19 @@ object {
     font-size: 1.5em;
     margin-left: .4em;
     font-weight: 600;
+
+    @include mediaQuery($medium) {
+        align-self: center;
+    }
 }
 
 .hamburger-menu {
     margin-left: auto;
     font-size: 1.45em;
+
+    @include mediaQuery($medium) {
+        display: none;
+    }
 }
 
 nav {
@@ -42,6 +54,13 @@ nav {
     background-color: $primary-background-color;
     color: $primary-font-color;
 
+    @include mediaQuery($medium) {
+        position: static;
+        background-color: inherit;
+        height: 0;
+        margin-top: .5em;
+    }
+
     .x-icon {
         font-size: 1.5em;
         display: block;
@@ -50,17 +69,32 @@ nav {
         margin-bottom: .7em;
         text-align: right;
         z-index: 100;
+        
+        @include mediaQuery($medium) {
+            display: none;
+        }
     }
 
     ul {
         list-style-type: none;
         font-size: 1.2em;
+
+        @include mediaQuery($medium) {
+            @include flex(flex, null, wrap);
+        }
     }
 
     li {
         padding: .5em;
         margin-bottom: .3em;
         border: 1px solid $border;
+
+        @include mediaQuery($medium) {
+            border: 0;
+            font-size: .8em;
+            color: #fff;
+            margin-bottom: 0;
+        }
     }
 }
 
