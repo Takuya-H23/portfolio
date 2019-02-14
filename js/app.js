@@ -44,7 +44,7 @@
     portfolio.push(new Portfolio(
         'REAL TIME CHAT APPLICATION',
         ['./img/chat2.png', './img/chat1.png'],
-        'Real time chat application using Node.js and Express. To try the application, please download the files from my github account and run "node app" command in your Terminal.',
+        'Real time chat application using Node.js and Express. To try the application, please download the files from my github account and run "npm install", and"node app" commands in your Terminal.',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
 
