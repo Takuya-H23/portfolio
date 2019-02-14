@@ -44,14 +44,14 @@
     portfolio.push(new Portfolio(
         'REAL TIME CHAT APPLICATION',
         ['./img/chat1.png', './img/chat2.png'],
-        'Real time chat application using Node.js and Express',
+        'Real time chat application using Node.js and Express. To try the application, please download the files from my github account and run "node app" in your Terminal.',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
 
     portfolio.push(new Portfolio(
         'GREAT PLACE IN CANADA',
         ['./img/rps.png', './img/memorycard.png'],
-        'Dynamically display great places I have been by creating and serving JSON file in Node.js',
+        'Dynamically display great places I have been by creating and serving JSON file in Node.js.',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
 
@@ -119,7 +119,6 @@
             let target = portfolio.filter(item => item.title === elementTitle);
             let borderWidth = elementTitle.length * 12.5;
             let border = eventTarget.nextElementSibling;
-            console.log(border);
             let title = target[0].title;
             let portfolioHTML = '';
 

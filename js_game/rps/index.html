@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Final Project - RPS Game-</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Timmana" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="circles">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div class="window">
+					<span id="typed"></span>
+				</div>
+			</div>
+		</header>
+
+		<aside class="stats1">
+			<div id='username'>Username</div>
+			<div class="result" id="userP">
+				<p>Win:
+					<span id="userWin" class="userStats">0</span>
+				</p>
+				<p>Lose:
+					<span id="userLose" class="userStats">0</span>
+				</p>
+				<p>Even:
+					<span class="even userStats">0</span>
+				</p>
+				<p>Rock:
+					<span id="userRock" class="userStats">0</span>
+				</p>
+				<p>Paper:
+					<span id="userPaper" class="userStats">0</span>
+				</p>
+				<p>Scissors:
+					<span id="userScissors" class="userStats">0</span>
+				</p>
+			</div>
+		</aside>
+
+		<section>
+			<div id="gameResult">
+				<div class="hand-image-wrapper position1">
+					<i class="far fa-hand-rock user" id="userRockImg"></i>
+					<i class="far fa-hand-paper user" id="userPaperImg"></i>
+					<i class="far fa-hand-scissors user" id="userScissorsImg"></i>
+				</div>
+
+				<div id="animationContainer">
+					<h2 id="welcomeMsg">Welcome to Rock Paper Scissors</h2>
+				</div>
+
+				<div class="hand-image-wrapper position2">
+					<i class="far fa-hand-rock cpu" id="cpuRockImg"></i>
+					<i class="far fa-hand-paper cpu" id="cpuPaperImg"></i>
+					<i class="far fa-hand-scissors cpu" id="cpuScissorsImg"></i>
+				</div>
+			</div>
+			<fieldset id="userHandWrapper">
+				<legend>Choose Your Hand!</legend>
+				<button class="hand-btn">Rock</button>
+				<button class="hand-btn">Paper</button>
+				<button class="hand-btn">Scissors</button>
+			</fieldset>
+		</section>
+
+		<aside class="stats2">
+			<div class="aiName">AI</div>
+			<div class="result" id="aiP">
+				<p>Win:
+					<span id="cpuWin" class="cpuStats">0</span>
+				</p>
+				<p>Lose:
+					<span id="cpuLose" class="cpuStats">0</span>
+				</p>
+				<p>Even:
+					<span class="even cpuStats">0</span>
+				</p>
+				<p>Rock:
+					<span id="cpuRock" class="cpuStats">0</span>
+				</p>
+				<p>Paper:
+					<span id="cpuPaper" class="cpuStats">0</span>
+				</p>
+				<p>Scissors:
+					<span id="cpuScissors" class="cpuStats">0</span>
+				</p>
+			</div>
+		</aside>
+
+		<footer>
+			<button id="reset">Reset</button>
+		</footer>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/typed.js-master/typed.js"></script>
+	<script src="./js/TweenMax.min.js"></script>
+	<script src="./js/app.js"></script>
+
+</body>
+
+</html>

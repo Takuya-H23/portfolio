@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#investigator, #nurse, #tim, #back, #top {
+    cursor: pointer;
+}
+
+svg #page2 #projects circle:hover {
+    cursor: pointer;
+}

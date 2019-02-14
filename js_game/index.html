@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Takuya Hirata">
+    <title>JS GAMES</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <svg version="1.1" id="game" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+        <style type="text/css">
+
+        </style>
+        <rect id="bg" class="st0" width="1920" height="1080" />
+        <!-- <text id="text1" transform="matrix(0.9623 0 0 1 782.188 349.9062)" class="title st1 st2 st3">JS GAMES</text> -->
+        <text id="text1" x="960" y="300" class="title st1 st2 st3" text-anchor="middle">JS GAMES</text>
+        <!-- <line id="line1" class="st4" x1="715.44" y1="323.59" x2="1194.48" y2="323.59" />
+        <line id="line2" class="st4" x1="715.44" y1="323.59" x2="1194.48" y2="323.59" /> -->
+        <line id="line3" class="st4" x1="948.19" y1="372.81" x2="699.21" y2="627.34" />
+        <line id="line4" class="st4" x1="947.85" y1="373.16" x2="1194.82" y2="629.81" />
+        <polygon id="arrow1" class="st4" points="696.73,630.22 701.68,610.31 706.62,590.4 720.74,604.81 734.86,619.22 715.79,624.72 " />
+        <polygon id="arrow2" class="st4" points="1195.02,630.99 1190.73,610.91 1186.45,590.83 1171.86,604.73 1157.27,618.62 
+    	1176.14,624.8 " />
+        <text id="text2" transform="matrix(0.9623 0 0 1 627.5659 731.9541)" class="st5 st2 st3">RPS</text>
+        <text id="text3" transform="matrix(0.9623 0 0 1 1130.5879 731.3789)" class="st5 st2 st3">MCG</text>
+
+        <line id="line5" class="st4" x1="596.36" y1="704.69" x2="781.75" y2="704.58" />
+        <!-- Link to rps game -->
+        <foreignObject x="596.36" y="657.69" width="185.39" height="94">
+            <a class="link-animation1" href="./rps/index.html" target="_blank"></a>
+        </foreignObject>
+
+        <line id="line6" class="st4" x1="1113.29" y1="704.69" x2="1298.67" y2="704.58" />
+
+        <line id="line7" class="st4" x1="1113.29" y1="704.69" x2="1298.67" y2="704.58" />
+        <!-- Link to Memory Card Game -->
+        <foreignObject x="1113.29" y="657.69" width="185.39" height="94">
+            <a class="link-animation2" href="./mcg/index.html" target="_blank"></a>
+        </foreignObject>
+        <line id="line8" class="st4" x1="596.36" y1="704.69" x2="781.75" y2="704.58" />
+
+
+        <!-- Fireworks -->
+        <g id="fireworks" class="st6">
+            <line id="fire1" class="st7" x1="504.34" y1="204.06" x2="504.34" y2="417.81" />
+            <line id="fire2" class="st7" x1="607.19" y1="305.31" x2="401.5" y2="305.31" />
+            <line id="fire3" class="st7" x1="566.59" y1="240.62" x2="443.45" y2="365.78" />
+            <line id="fire4" class="st7" x1="566.59" y1="370" x2="440.74" y2="237.81" />
+            <line id="fire5" class="st8" x1="534.31" y1="227.12" x2="473.02" y2="384.91" />
+            <line id="fire6" class="st8" x1="539.95" y1="384.37" x2="470.09" y2="230.47" />
+            <line id="fire7" class="st9" x1="581.16" y1="278.56" x2="426.18" y2="333.47" />
+            <line id="fire8" class="st9" x1="581.22" y1="337.12" x2="428.82" y2="274.91" />
+            <ellipse id="center" class="st10" cx="503.67" cy="306.02" rx="4.74" ry="4.92" />
+        </g>
+        <g id="fireworks2" class="st6">
+            <line id="fire1_1_" class="st7" x1="1371.75" y1="341.88" x2="1371.75" y2="521.88" />
+            <line id="fire2_1_" class="st7" x1="1457" y1="427.14" x2="1286.5" y2="427.14" />
+            <line id="fire3_1_" class="st7" x1="1423.35" y1="372.66" x2="1321.27" y2="478.06" />
+            <line id="fire4_1_" class="st7" x1="1423.35" y1="481.61" x2="1319.03" y2="370.3" />
+            <line id="fire5_1_" class="st8" x1="1396.59" y1="361.29" x2="1345.78" y2="494.17" />
+            <line id="fire6_1_" class="st8" x1="1401.26" y1="493.71" x2="1343.36" y2="364.11" />
+            <line id="fire7_1_" class="st9" x1="1435.42" y1="404.61" x2="1306.95" y2="450.85" />
+            <line id="fire8_1_" class="st9" x1="1435.48" y1="453.92" x2="1309.14" y2="401.54" />
+            <ellipse id="center_1_" class="st10" cx="1371.19" cy="427.73" rx="3.93" ry="4.14" />
+        </g>
+        <g id="fireworks3" class="st6">
+            <line id="fire1_2_" class="st7" x1="668.59" y1="457.19" x2="668.59" y2="569.69" />
+            <line id="fire2_2_" class="st7" x1="721.87" y1="510.48" x2="615.31" y2="510.48" />
+            <line id="fire3_2_" class="st7" x1="700.84" y1="476.43" x2="637.04" y2="542.3" />
+            <line id="fire4_2_" class="st7" x1="700.84" y1="544.52" x2="635.64" y2="474.95" />
+            <line id="fire5_2_" class="st8" x1="684.12" y1="469.32" x2="652.36" y2="552.37" />
+            <line id="fire6_2_" class="st8" x1="687.04" y1="552.09" x2="650.84" y2="471.09" />
+            <line id="fire7_2_" class="st9" x1="708.39" y1="496.4" x2="628.09" y2="525.3" />
+            <line id="fire8_2_" class="st9" x1="708.42" y1="527.22" x2="629.46" y2="494.48" />
+            <ellipse id="center_2_" class="st10" cx="668.24" cy="510.85" rx="2.45" ry="2.59" />
+        </g>
+        <g id="fireworks4" class="st6">
+            <line id="fire1_3_" class="st7" x1="541.56" y1="793.28" x2="541.56" y2="880.47" />
+            <line id="fire2_3_" class="st7" x1="584.18" y1="834.58" x2="498.93" y2="834.58" />
+            <line id="fire3_3_" class="st7" x1="567.36" y1="808.19" x2="516.32" y2="859.25" />
+            <line id="fire4_3_" class="st7" x1="567.36" y1="860.97" x2="515.2" y2="807.05" />
+            <line id="fire5_3_" class="st8" x1="553.98" y1="802.69" x2="528.57" y2="867.05" />
+            <line id="fire6_3_" class="st8" x1="556.31" y1="866.83" x2="527.36" y2="804.05" />
+            <line id="fire7_3_" class="st9" x1="573.39" y1="823.67" x2="509.16" y2="846.07" />
+            <line id="fire8_3_" class="st9" x1="573.42" y1="847.56" x2="510.25" y2="822.18" />
+            <ellipse id="center_3_" class="st10" cx="541.28" cy="834.87" rx="1.96" ry="2.01" />
+        </g>
+        <g id="fireworks5" class="st6">
+            <line id="fire1_4_" class="st7" x1="1287.17" y1="160.47" x2="1287.17" y2="247.66" />
+            <line id="fire2_4_" class="st7" x1="1329.8" y1="201.77" x2="1244.55" y2="201.77" />
+            <line id="fire3_4_" class="st7" x1="1312.97" y1="175.38" x2="1261.93" y2="226.43" />
+            <line id="fire4_4_" class="st7" x1="1312.97" y1="228.15" x2="1260.81" y2="174.24" />
+            <line id="fire5_4_" class="st8" x1="1299.59" y1="169.87" x2="1274.19" y2="234.24" />
+            <line id="fire6_4_" class="st8" x1="1301.93" y1="234.02" x2="1272.98" y2="171.24" />
+            <line id="fire7_4_" class="st9" x1="1319.01" y1="190.86" x2="1254.77" y2="213.25" />
+            <line id="fire8_4_" class="st9" x1="1319.04" y1="214.74" x2="1255.87" y2="189.37" />
+            <ellipse id="center_4_" class="st10" cx="1286.89" cy="202.05" rx="1.96" ry="2.01" />
+        </g>
+        <g id="fireworks6" class="st6">
+            <line id="fire1_5_" class="st7" x1="1374.96" y1="720.16" x2="1374.96" y2="832.66" />
+            <line id="fire2_5_" class="st7" x1="1428.24" y1="773.45" x2="1321.68" y2="773.45" />
+            <line id="fire3_5_" class="st7" x1="1407.21" y1="739.4" x2="1343.41" y2="805.27" />
+            <line id="fire4_5_" class="st7" x1="1407.21" y1="807.49" x2="1342.01" y2="737.92" />
+            <line id="fire5_5_" class="st8" x1="1390.49" y1="732.29" x2="1358.73" y2="815.34" />
+            <line id="fire6_5_" class="st8" x1="1393.41" y1="815.06" x2="1357.22" y2="734.06" />
+            <line id="fire7_5_" class="st9" x1="1414.76" y1="759.37" x2="1334.46" y2="788.27" />
+            <line id="fire8_5_" class="st9" x1="1414.79" y1="790.19" x2="1335.83" y2="757.44" />
+            <ellipse id="center_5_" class="st10" cx="1374.61" cy="773.82" rx="2.45" ry="2.59" />
+        </g>
+    </svg>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

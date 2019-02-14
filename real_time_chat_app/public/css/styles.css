@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(141, 148, 134);
+    padding: 2em;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Caveat Brush',
+    cursive;
+
+}
+
+.connection {
+    font-size: 1.2em;
+}
+
+label {
+    margin-top: 2em;
+    display: block;
+}
+
+input {
+    border: 0;
+    background-color: rgb(230, 228, 228);
+    display: block;
+    width: 85%;
+    height: 2em;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-bottom: 1.5em;   
+    padding: .5em;
+    font-family: 'Caveat',
+    cursive;
+}
+
+#messageScreen {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 1.2em;
+    padding: 0 .5em;
+    height: 65vh;
+    overflow: scroll;
+    background-color: rgb(237, 220, 220);
+}
+
+#messageScreen p {
+    margin-top: 1em;
+    font-size: 1.3em;
+    font-family: 'Caveat',
+    cursive;
+}
+
+.people {
+    color: darkgreen;
+}
+
+.own {
+    color: navy;
+}

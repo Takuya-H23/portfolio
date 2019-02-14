@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bungee Inline',
+    cursive;
+
+}
+
+/* Basic layout------------------------------------------------------------------- */
+
+main {
+    margin: 0 auto;
+    min-height: 48rem;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-areas: 'header header header' 'stats1 section stats2' 'footer footer footer';
+    border: 1px teal solid;
+}
+
+header {
+    grid-area: header;
+    background: #2b485a;
+    display: flex;
+}
+
+.stats1 {
+    grid-area: stats1;
+    background: rgb(226, 226, 226);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.stats2 {
+    grid-area: stats2;
+    background: rgb(226, 226, 226);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+    background: lightgrey;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}
+
+.circles div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.circles div:first-child {
+    background: red;
+}
+
+.circles div:nth-child(2) {
+    margin: 0 13px;
+    background: orange;
+}
+
+.circles div:last-child {
+    background: green;
+}
+
+.window {
+    background: #fff;
+    height: 2.5rem;
+    width: 68rem;
+    margin: 1.3rem 0 0 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* section------------------------------------------------------------------------ */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#gameResult {
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1.3em;
+    font-family: 'Timmana',sans-serif;
+    align-items: center;
+}
+
+.hand-image-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.position1 {
+    position: fixed;
+    top: 220px;
+    left: 220px;
+}
+
+.position2 {
+    position: fixed;
+    top: 220px;
+    right: 420px;
+}
+
+.hand-image-wrapper i {
+    font-size: 3em;
+    opacity: 0;
+    padding: .2em;
+    position: absolute;
+}
+
+.hand-active {
+    color: lightgreen;
+}
+
+.winMsg {
+    color: blue;
+}
+
+.loseMsg {
+    color: red;
+}
+
+.evenMsg {
+    color: green;
+}
+
+fieldset {
+    border: 2px outset #2b485a;
+    padding: 1em 1.6em 1.6em;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2b485a;
+}
+
+.hand-btn {
+    padding: 10px 40px;
+    color: #2b485a;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background: rgba(191, 191, 191, 0.3);
+}
+
+button {
+    transition: color 0.5s ease-out;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+#ai {
+    font-size: 2rem;
+    color: grey;
+}
+
+/* aside-------------------------------------------------------------------------- */
+
+aside {
+    font-size: 1.1rem;
+}
+
+#username, .aiName {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2.5rem .9em;
+}
+
+.result {
+    padding-left: 1.5rem;
+}
+
+.result p {
+    margin-bottom: 3rem;
+}
+
+/* footer-------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer button {
+    padding: .5rem 2.5rem;
+    border: 1px solid #2b485a;
+    background: #fff;
+    color: #2b485a;
+}
+
+.typed-cursor {
+    color: teal;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+aside, section, footer {
+    opacity: 0;
+}

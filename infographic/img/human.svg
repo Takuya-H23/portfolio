@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 284 373" style="enable-background:new 0 0 284 373;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00BF9C;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#1F1C38;}
+	.st3{fill:#FF7300;}
+</style>
+<g id="Layer_1">
+	<g>
+		<rect x="539.5" y="-299.5" class="st0" width="959" height="599"/>
+		<path d="M1498-299v598H540v-598H1498 M1499-300H539v600h960V-300L1499-300z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 170.0981 -85.3999)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:60px;">Stats in Toronto</text>
+	<g>
+		<circle class="st1" cx="228" cy="48" r="21"/>
+		<path class="st1" d="M249,220.1V97c0-6.6-5.4-12-12-12h-11c-6.6,0-12,5.4-12,12v17.4l-88.6,24c-2,0.5-3.1,2.6-2.6,4.6l1.9,6.9
+			c0.5,2,2.6,3.1,4.6,2.6l84.8-23V210h-61.9c-5.6,0-10.3,3.9-11.6,9.1c-0.6,0.7-1.1,1.6-1.6,2.5l-58,123.1c-2.8,6-0.2,13.2,5.7,16
+			l10,4.7c6,2.8,13.2,0.2,16-5.7l54-114.6h70.6c6.6,0,12-5.4,12-12v-11C249.2,221.4,249.1,220.8,249,220.1z"/>
+	</g>
+	<g>
+		<g>
+			<polygon class="st1" points="35.5,160.5 35.5,129.5 22.5,129.5 22.5,0.5 51.5,0.5 51.5,129.5 39.5,129.5 39.5,160.5 			"/>
+			<path d="M51,1v128H40h-1v1v30h-3v-30v-1h-1H23V1H51 M52,0H22v130h13v31h5v-31h12V0L52,0z"/>
+		</g>
+		<g>
+			<rect x="93.5" y="155.5" class="st1" width="45" height="5"/>
+			<path d="M138,156v4H94v-4H138 M139,155H93v6h46V155L139,155z"/>
+		</g>
+		<g>
+			<polygon class="st1" points="149.5,365.5 149.5,173.5 28.5,173.5 28.5,365.5 14.5,365.5 14.5,173.5 0.5,173.5 0.5,161.5 
+				184.5,161.5 184.5,173.5 163.5,173.5 163.5,365.5 			"/>
+			<path d="M184,162v11h-20h-1v1v191h-13V174v-1h-1H29h-1v1v191H15V174v-1h-1H1v-11h34h5h53h46H184 M185,161h-46H93H40h-5H0v13h14
+				v192h15V174h120v192h15V174h21V161L185,161z"/>
+		</g>
+	</g>
+	<g>
+		<polygon class="st1" points="259.5,367.5 259.5,265.5 207.5,265.5 207.5,367.5 201.5,367.5 201.5,265.5 189.5,265.5 189.5,245.5 
+			254.5,245.5 254.5,132.5 278.5,132.5 278.5,265.5 265.5,265.5 265.5,367.5 		"/>
+		<path d="M278,133v112v20h-12h-1v1v101h-5V266v-1h-1h-51h-1v1v101h-5V266v-1h-1h-11v-19h64h1v-1V133H278 M279,132h-25v113h-65v21
+			h12v102h7V266h51v102h7V266h13v-21V132L279,132z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 369 62)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:24px;">$41,697-$83,163</text>
+	<text transform="matrix(1 0 0 1 369 105)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:24px;">Average $54,070</text>
+	<text transform="matrix(1 0 0 1 369 148)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:24px;">Median $56,698</text>
+	<text transform="matrix(1 0 0 1 651 249)" class="st2" style="font-family:'SourceSansPro-Black'; font-size:24px;">Male: 79%</text>
+	<text transform="matrix(1 0 0 1 651 277)" class="st3" style="font-family:'SourceSansPro-Black'; font-size:24px;">Female: 21%</text>
+	<text transform="matrix(1 0 0 1 369 205)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:24px;">Total Pay:</text>
+	<text transform="matrix(1 0 0 1 369 238)" class="st1" style="font-family:'SourceSansPro-Black'; font-size:24px;">$41,738 - $88,481</text>
+	<circle class="st1" cx="223" cy="46" r="34"/>
+</g>
+<g id="Layer_2">
+	<g>
+		<g>
+			<g>
+				<g>
+					<path class="st3" d="M709.8,119l-74.3-18.5c8.6-34.5,38.8-58,74.3-58V119z"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path class="st2" d="M709.8,119V42.4c42.3,0,76.6,34.3,76.6,76.6s-34.3,76.6-76.6,76.6s-76.6-34.3-76.6-76.6
+						c0-6.8,0.6-12,2.3-18.5L709.8,119z"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+			</g>
+			<g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

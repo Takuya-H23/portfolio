@@ -281,7 +281,8 @@ nav {
   @media (min-width: 992px) {
     .desc {
       font-size: 1.2em;
-      margin-top: 1.2em; } }
+      margin-top: 1.2em;
+      line-height: 1.5em; } }
 
 .skills-wrapper {
   margin-top: 1em; }

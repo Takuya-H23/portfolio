@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Final Project - RPS Game-</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+
+<body>
+	<main id="testWrapper">
+		<header>
+			<div class="circles">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div class="window">
+					<span id="typed">Rock Paper Scissor Game</span>
+				</div>
+			</div>
+		</header>
+
+		<aside class="stats1">
+			<h3 id='username'>You</h3>
+			<div class="result" id="userP">
+				<label>Win:
+					<input type="text" v-model="userWin">
+				</label>
+				<label>Lose:
+					<input type="text" v-model="userLose">
+				</label>
+				<label>Even:
+					<input type="text" v-model="even">
+				</label>
+				<label>Rock:
+					<input type="text" v-model="userRock">
+				</label>
+				<label>Paper:
+					<input type="text" v-model="userPaper">
+				</label>
+				<label>Scissors:
+					<input type="text" v-model="userScissor">
+				</label>
+			</div>
+		</aside>
+
+		<section>
+			<div class="round">
+				<h2>Rock Paper Scissor</h2>
+			</div>
+			<div id="gameResult">
+				<div id="userPic">
+					<img v-bind:src="userPick">
+				</div>
+				<h3>{{result}}</h3>
+
+				<div id="aiPic">
+					<img v-bind:src="aiPick">
+				</div>
+			</div>
+			<h4>{{picks}}</h4>
+			<div>
+				<fieldset>
+					<legend>Choose Your Hand!</legend>
+					<button class="hand" v-on:click="rockFunc()">Rock</button>
+					<button class="hand paper" v-on:click="paperFunc()">Paper</button>
+					<button class="hand" v-on:click="scissorFunc()">Scissor</button>
+				</fieldset>
+			</div>
+		</section>
+
+		<aside class="stats2">
+			<h3 class="aiName">AI</h3>
+			<div class="result" id="aiP">
+				<label>Win:
+					<input type="text" v-model="aiData[3]">
+				</label>
+				<label>Lose:
+					<input type="text" v-model="aiData[4]">
+				</label>
+				<label>Even:
+					<input type="text" v-model="even">
+				</label>
+				<label>Rock:
+					<input type="text" v-model="aiData[0]">
+				</label>
+				<label>Paper:
+					<input type="text" v-model="aiData[1]">
+				</label>
+				<label>Scissors:
+					<input type="text" v-model="aiData[2]">
+				</label>
+			</div>
+		</aside>
+
+		<footer>
+			<button id="reset" v-on:click="resetFunc()">Reset</button>
+		</footer>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+</html>

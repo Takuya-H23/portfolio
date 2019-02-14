@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Front-End Web Developer Infographic</title>
+
+    <!-- link to css files -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- link to js files -->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script> -->
+</head>
+
+<body>
+    <div id="loading">
+        <img src="img/preloader.gif" />
+    </div>
+
+    <main>
+
+        <!-- SCREEN 1 -->
+        <section id="screen1">
+            <h1 class="toppage-h1">Front-End Web Development</h1>
+            <p>&lt;h1&gt;Hello World!&lt;/h1&gt;</p>
+            <!-- <div class="layer1 layer">Happy Coding:)</div>
+            <div class="layer2 layer"></div>
+            <button class="happyBtn">Happy Button</button> -->
+            <div class="next">&gt;</div>
+
+        </section>
+
+        <!-- SCREEN 2 -->
+        <section id="screen2">
+
+            <h1>Languages</h1>
+            <div class="flex1">
+                <div class="flex2">
+                    <h2 class="html">HTML</h2>
+                    <div class="flex3 animatedDiv1">
+                        <div class="browserImg">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <h3 class="noCss">Hello World!</h3>
+                        <button class="noCss button">Button</button>
+                    </div>
+                </div>
+                <div class="flex2 box">
+                    <h2>+CSS</h2>
+                    <div class="flex3">
+                        <div class="browserImg">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <h3>Hello World!</h3>
+                        <button>Button</button>
+                    </div>
+                </div>
+                <div class="flex2 box">
+                    <h2 class="js">+JavaScript</h2>
+                    <div class="flex3 animatedDiv2">
+                        <div class="browserImg">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <h3>Hello
+                            <span id="username">World</span>!</h3>
+                        <button id="button">Click me!</button>
+                        <p id="msg"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </section>
+
+        <!-- SCREEN 3 -->
+        <section id="screen3">
+            <h1>Skills</h1>
+            <p id="screen3Msg">Click each skill to display more information.</p>
+            <img id="imageHolder" src="./img/skills.svg" alt="Computer Image" class="pcImg">
+            <div id="skillLayer"></div>
+            <h2 class="skill1">Preprocessor</h2>
+            <h2 class="skill2">Command Line</h2>
+            <h2 class="skill3">Accessibility</h2>
+            <h2 class="skill4">VCS</h2>
+            <h2 class="skill5">Responsive Design</h2>
+            <div class="prev back-default">&lt;</div>
+            <div class="next back-default">&gt;</div>
+
+        </section>
+
+        <!-- SCREEN 4 -->
+        <section id="screen4">
+            <h1>Tools</h1>
+            <p id="screen4Msg">Click each logo to display more information.</p>
+            <img id="imageHolder2" src="./img/pc.svg" alt="Computer Image" class="pc">
+            <div id="toolLayer"></div>
+            <img src="./img/browser.svg" alt="Browser" class="browser">
+            <img src="./img/brackets.svg" alt="Brackets" class="brackets">
+            <img src="./img/illustrator.svg" alt="illustrator" class="illustrator">
+            <img src="./img/photoshop.svg" alt="Photoshop" class="photoshop">
+            <img src="./img/terminal.svg" alt="Terminal" class="terminal">
+            <div class="prev back-default2">&lt;</div>
+            <div class="next back-default2">&gt;</div>
+
+        </section>
+
+        <!-- SCREEN 5 -->
+        <section id="screen5">
+
+            <h1>Stats in Toronto</h1>
+            <div id="stats">
+                <img src="./img/human2.svg" alt="Web Developer" class="dev">
+                <div class="head"></div>
+                <button class="help">Help him</button>
+                <p class="msg">Thanks! Now I can code!</p>
+                <div class="statsWrapper">
+                    <div class="salary">
+                        <p>
+                            <strong>Salary: </strong>$41,697 - $83,163
+                        </p>
+                        <p>
+                            <strong>Average: </strong>$54,070
+                        </p>
+                        <p>
+                            <strong>Medium: </strong>$56,698
+                        </p>
+                    </div>
+                    <div class="gender">
+                        <div>
+                            <p class="male">
+                                <strong>M: </strong>
+                                <br>79%
+                            </p>
+                            <p class="female">
+                                <strong>F: </strong>
+                                <br>21%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prev">&lt;</div>
+
+        </section>
+        <!-- background audio control -->
+        <div id="playPause" class="pause"></div>
+    </main>
+    <!-- audio -->
+    <audio id="background" src="audio/background.mp3" loop></audio>
+    <audio id="voiceover" src=""></audio>
+    <audio src="./audio/typing.mp3" id="typingSound"></audio>
+    <audio src="./audio/click.mp3" id="clickSound">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

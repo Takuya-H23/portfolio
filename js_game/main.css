@@ -1,0 +1,79 @@
+@font-face {
+    src: url('./PhosphateInline.ttf');  
+    font-family: 'Phosphate-Inline';
+}
+
+body {
+    margin: 0;
+}
+
+.st0 {
+    fill: #050528;
+}
+    
+.st1 {
+    fill: #F2F2F4;
+}
+    
+.st2 {
+    font-family: 'Phosphate-Inline';
+}
+    
+.st3 {
+    font-size: 81.5625px;
+}
+
+.title {
+    font-size: 130px;
+}
+    
+.st4 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+    
+.st5 {
+    fill: #FFFFFF;
+}
+    
+.st6 {
+    opacity: 0;
+}
+    
+.st7 {
+    fill: none;
+    stroke: #FFFF00;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+    
+.st8 {
+    fill: none;
+    stroke: #0000FF;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+    
+.st9 {
+    fill: none;
+    stroke: #FF0000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+    
+.st10 {
+    fill: #F7931E;
+}
+
+#text1, #text2, #text3 {
+    opacity: 0;
+}
+
+a {
+    display: block;
+    height: 94px;
+}
+
+

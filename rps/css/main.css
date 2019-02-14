@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Basic layout------------------------------------------------------------------- */
+
+main {
+    margin: 0 auto;
+    min-height: 48rem;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-areas: 'header header header' 'stats1 section stats2' 'footer footer footer';
+    border: 1px teal solid;
+}
+
+header {
+    grid-area: header;
+    background: #2b485a;
+    display: flex;
+}
+
+fieldset input {
+    font-family: 'Oswald', sans-serif;
+}
+
+.stats1 {
+    grid-area: stats1;
+    background: rgb(226, 226, 226);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.stats2 {
+    grid-area: stats2;
+    background: rgb(226, 226, 226);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+    background: lightgrey;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}
+
+.circles div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.circles div:first-child {
+    background: red;
+}
+
+.circles div:nth-child(2) {
+    margin: 0 13px;
+    background: orange;
+}
+
+.circles div:last-child {
+    background: green;
+}
+
+.window {
+    background: #fff;
+    height: 2.5rem;
+    width: 68rem;
+    margin: 1.3rem 0 0 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* section------------------------------------------------------------------------ */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.round {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#gameResult {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gameResult div {
+    /* border: 1px solid; */
+    width: 5em;
+}
+
+#gameResult div img {
+    width: 100%;
+}
+
+.winMsg {
+    color: blue;
+}
+
+.loseMsg {
+    color: red;
+}
+
+.evenMsg {
+    color: green;
+}
+
+fieldset legend {
+    font-family: 'Contrail One', cursive;
+}
+
+fieldset {
+    font-family: 'Contrail One', cursive;
+    border: 2px outset #2b485a;
+    padding: 2.5rem 2rem 2rem 2rem;
+    width: 25rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2b485a;
+}
+
+.hand {
+    padding: .3em .5em;
+}
+
+.paper {
+    margin: 0 1em;
+}
+
+.button {
+    border: 2px solid #2b485a;
+    padding: 10px 40px;
+    color: #2b485a;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background: rgba(191, 191, 191, 0.3);
+    transition: color .5s ease-out;
+}
+
+.button:hover {
+    background: rgba(0,0,0,.4);
+    color: #fff;
+}
+
+/* aside-------------------------------------------------------------------------- */
+
+aside {
+    font-family: 'Contrail One', cursive;
+    font-size: 1.2rem;
+}
+
+#username, .aiName {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2.5rem .8em;
+}
+
+.result {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.result input {
+    display: block;
+    width: 5em;
+    margin-bottom: 1em;
+}
+
+h4 {
+    color: teal;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* footer-------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer button {
+    font-family: 'Oswald', sans-serif;
+    padding: .5rem 2.5rem;
+    border: 1px solid #2b485a;
+    background: #fff;
+    color: #2b485a;
+}
+
+button {
+    transition: color 0.5s ease-out;
+}
+
+button:hover {
+    background: rgba(0,0,0,.2);
+    color: #fff;
+}
+
+
+.typed-cursor {
+    color: teal;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
