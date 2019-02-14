@@ -42,8 +42,8 @@
     ));
 
     portfolio.push(new Portfolio(
-        'CYBER CHAT APPLICATION',
-        ['./img/rps.png', './img/memorycard.png'],
+        'REAL TIME CHAT APPLICATION',
+        ['./img/chat1.png', './img/chat2.png'],
         'Real time chat application using Node.js and Express',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
@@ -114,13 +114,12 @@
      */
     titleList.addEventListener('mouseover', (e) => {
         let eventTarget = e.target;
-        console.log(eventTarget);
-        if(eventTarget.nodeName === 'LI') {
-            let elementTitle = e.target.innerText; 
+        if(eventTarget.nodeName === 'A') {
+            let elementTitle = eventTarget.innerText;
             let target = portfolio.filter(item => item.title === elementTitle);
             let borderWidth = elementTitle.length * 12.5;
-            let border = e.target.nextElementSibling;
-            console.log(target);
+            let border = eventTarget.nextElementSibling;
+            console.log(border);
             let title = target[0].title;
             let portfolioHTML = '';
 
@@ -135,7 +134,7 @@
             portfolioHTML = `<h4>${title}</h4>`;
             portfolioHTML += '<div class="thumbnail-wrapper">';
             target[0].images.forEach(image => {
-                portfolioHTML += `<div><img src="${image}" alt="${title}"></div>`;
+                portfolioHTML += `<div><a href="${image}" target="_blank"><img src="${image}" alt="${title}"></a></div>`;
             });
             portfolioHTML += `
             </div>
@@ -158,7 +157,7 @@
 
     titleList.addEventListener('mouseout', (e) => {
         let eventTarget = e.target;
-        if(eventTarget.nodeName === 'LI') {
+        if(eventTarget.nodeName === 'A') {
             let border = e.target.nextElementSibling;
             TweenMax.to(border, 1, {
                 width: 0

@@ -11,11 +11,11 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #727171; }
 
 header {
   background-color: #000118;
-  color: #4a4949;
+  color: #727171;
   font-family: "Poppins", sans-serif; }
 
 .header-line1 {
@@ -29,6 +29,9 @@ header {
   @media (min-width: 992px) {
     .header-line1 {
       padding: 2em; } }
+  @media (min-width: 768px) {
+    .header-line1 a {
+      color: #fff; } }
 
 .logo-container {
   width: 2.5em; }
@@ -54,7 +57,8 @@ object {
 
 .hamburger-menu {
   margin-left: auto;
-  font-size: 1.45em; }
+  font-size: 1.45em;
+  color: #fff; }
   @media (min-width: 768px) {
     .hamburger-menu {
       display: none; } }
@@ -229,6 +233,8 @@ nav {
     .title-list li {
       font-size: 1.25em;
       padding: 1.5em 0 0 0; } }
+  .title-list li a {
+    display: block; }
 .title-list .border {
   width: 0;
   height: .2em;
