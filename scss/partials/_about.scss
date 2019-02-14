@@ -78,6 +78,14 @@
     }
 }
 
+.education-wrapper {
+    margin-bottom: 1em;
+
+    @include mediaQuery($medium) {
+        margin-top: 1.3em;
+    }
+}
+
 .job-wrapper {
     margin-bottom: 1.5em;
 }

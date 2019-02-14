@@ -192,6 +192,12 @@ nav {
       .education p, .experience p {
         font-size: 1.3em; } }
 
+.education-wrapper {
+  margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    .education-wrapper {
+      margin-top: 1.3em; } }
+
 .job-wrapper {
   margin-bottom: 1.5em; }
 
