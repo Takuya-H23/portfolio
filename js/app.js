@@ -35,7 +35,7 @@
     }
 
     portfolio.push(new Portfolio(
-        'MAD XSCAPE ROOM',
+        'MAD XSCAPE ROOM (Developing)',
         ['./img/main_logo.jpg', './img/main_logo.jpg'],
         'MAD Xcsape Room project for Durham College. I was responsible for creating a dynamic leaderborad page.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Photoshop']
@@ -43,14 +43,14 @@
 
     portfolio.push(new Portfolio(
         'REAL TIME CHAT APPLICATION',
-        ['./img/chat1.png', './img/chat2.png'],
-        'Real time chat application using Node.js and Express. To try the application, please download the files from my github account and run "node app" in your Terminal.',
+        ['./img/chat2.png', './img/chat1.png'],
+        'Real time chat application using Node.js and Express. To try the application, please download the files from my github account and run "node app" command in your Terminal.',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
 
     portfolio.push(new Portfolio(
-        'GREAT PLACE IN CANADA',
-        ['./img/rps.png', './img/memorycard.png'],
+        'GREAT PLACE IN CANADA (Developing)',
+        ['./img/great_place_canada.png', './img/great_place_canada.png'],
         'Dynamically display great places I have been by creating and serving JSON file in Node.js.',
         ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
     ));
