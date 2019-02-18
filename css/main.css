@@ -6,17 +6,16 @@ body {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  font-weight: 600; }
+  font-size: 1.1em; }
 
 a {
   text-decoration: none;
   color: #727171; }
 
 header {
-  background-color: #000118;
+  background-color: #020202;
   color: #727171;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .header-line1 {
   display: flex;
@@ -113,9 +112,8 @@ nav {
       nav li {
         font-size: 1.1em; } }
 
-.header-animation-container {
-  background-color: #000016;
-  padding: 1em; }
+.header-animation-container img {
+  width: 100%; }
 
 .about {
   color: #908f8f;
@@ -124,7 +122,7 @@ nav {
     .about {
       padding: 3em; } }
   .about h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: .5em;
     border-bottom: 2px solid #b4b4b4;
     font-size: 1.3em;
@@ -153,7 +151,7 @@ nav {
   .intro {
     flex: 1 100%; } }
 .intro p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: .5em;
   line-height: 1.4em; }
   @media (min-width: 768px) {
@@ -184,6 +182,7 @@ nav {
       .education h3, .experience h3 {
         font-size: 1.8em; } }
   .education p, .experience p {
+    font-family: "Roboto", sans-serif;
     margin-bottom: .3em; }
     @media (min-width: 768px) {
       .education p, .experience p {
@@ -208,7 +207,7 @@ nav {
     .portfolio {
       padding: 3em; } }
   .portfolio h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: .5em;
     border-bottom: 2px solid #b4b4b4;
     font-size: 1.3em;
@@ -231,7 +230,8 @@ nav {
 
 .title-list li {
   padding: 1em 0 0 0;
-  color: #908f8f; }
+  color: #908f8f;
+  font-family: "Roboto", sans-serif; }
   @media (min-width: 768px) {
     .title-list li {
       font-size: 1.1em; } }
@@ -311,7 +311,7 @@ nav {
     .contact {
       padding: 3em; } }
   .contact h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: .5em;
     border-bottom: 2px solid #b4b4b4;
     font-size: 1.3em;
@@ -395,7 +395,7 @@ nav {
   margin: 1em auto 0;
   background-color: #908f8f;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center; }
   @media (min-width: 768px) {
     #contactForm #submitBtn {
@@ -404,12 +404,12 @@ nav {
 
 footer {
   margin-top: 2em;
-  background-color: #000118;
+  background-color: #020202;
   padding: 1em; }
   footer p {
     color: #fff;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5em;
     font-size: .8em; }
 

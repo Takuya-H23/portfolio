@@ -126,8 +126,12 @@ nav {
 
 
 .header-animation-container {
-    background-color: #000016;
-    padding: 1em;
+    // background-color: $header;
+    // padding: 1em;
+
+    & img {
+        width: 100%;
+    }
 }
 
 

@@ -67,6 +67,7 @@
     }
 
     & p {
+        font-family: $primary-font-family;
         margin-bottom: .3em;
         @include mediaQuery($medium) {
             font-size: 1.2em;
