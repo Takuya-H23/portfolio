@@ -13,27 +13,29 @@ a {
   color: #727171; }
 
 header {
-  background-color: #020202;
+  background-color: #000;
   color: #727171;
   font-family: "Roboto", sans-serif; }
 
 .header-line1 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1em; }
+  padding: .5em 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
   @media (min-width: 768px) {
     .header-line1 {
       align-items: flex-start; } }
-  @media (min-width: 992px) {
-    .header-line1 {
-      padding: 2em; } }
   @media (min-width: 768px) {
     .header-line1 a {
       color: #fff; } }
 
 .logo-container {
-  width: 2.5em; }
+  width: 1.5em; }
   @media (min-width: 992px) {
     .logo-container {
       width: 3em; } }
@@ -41,18 +43,6 @@ header {
 object {
   width: 100%;
   height: 100%; }
-
-.name {
-  font-size: 1.5em;
-  margin-left: .4em;
-  font-weight: 600;
-  color: #fff; }
-  @media (min-width: 768px) {
-    .name {
-      align-self: center; } }
-  @media (min-width: 992px) {
-    .name {
-      font-size: 2em; } }
 
 .hamburger-menu {
   margin-left: auto;
@@ -63,8 +53,6 @@ object {
       display: none; } }
 
 nav {
-  display: flex;
-  flex-direction: column;
   margin-left: auto;
   position: fixed;
   right: -400px;
@@ -78,8 +66,8 @@ nav {
       position: static;
       background-color: inherit;
       height: 0;
-      margin-top: .5em;
-      width: auto; } }
+      width: auto;
+      margin-left: auto; } }
   nav .x-icon {
     font-size: 1.5em;
     display: block;
@@ -102,6 +90,8 @@ nav {
     padding: .5em;
     margin-bottom: .3em;
     border: 1px solid #b4b4b4; }
+    nav li a {
+      font-family: "Poppins", sans-serif; }
     @media (min-width: 768px) {
       nav li {
         border: 0;
@@ -112,8 +102,17 @@ nav {
       nav li {
         font-size: 1.1em; } }
 
-.header-animation-container img {
-  width: 100%; }
+.header-animation-container {
+  background-image: url("./../img/takuya-neon-sign.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 13em; }
+  @media (min-width: 768px) {
+    .header-animation-container {
+      height: 28em; } }
+  @media (min-width: 992px) {
+    .header-animation-container {
+      height: 55em; } }
 
 .about {
   color: #908f8f;
@@ -404,7 +403,7 @@ nav {
 
 footer {
   margin-top: 2em;
-  background-color: #020202;
+  background-color: #000;
   padding: 1em; }
   footer p {
     color: #fff;

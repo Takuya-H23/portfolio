@@ -24,6 +24,23 @@
     const portfolio = [];
     // Form Section
     const submitBtn = document.getElementById('submitBtn');
+    let scroll = false;
+    // const position = $(window).scrollTop();
+    $(window).scroll(() => {
+        if(!scroll) {
+            $('#stickyHeader').css('display', 'flex'); 
+            scroll = true;
+        }
+    });
+
+    var navOffset = $('#stickyHeader').innerHeight() - 20;
+
+    $("nav a[href^='#']").click(function() {
+        var idPosNav = $($(this).attr('href')).offset().top - navOffset;
+        $("body, html").animate({
+            scrollTop: idPosNav
+        }, 1000);
+    });
 
     class Portfolio {
         constructor(title, images, description, skills) {
@@ -75,7 +92,6 @@
         'Data visualization project to display Lakeridge projects using D3.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'D3']
     ));
-
     
     /**
      *  Hamburger Menu Animation
