@@ -124,11 +124,32 @@
     });
 
     /**
+     * Hover Animation on titles in mobile
+     */
+    $('.skills-mobile').on('mouseover', (e) => {
+        let el = e.target.parentElement;
+        if(el.className === 'layer') {
+            TweenMax.to(el, .5, {
+                opacity: 1
+            });
+        }
+    });
+
+    $('.skills-mobile').on('mouseout', (e) => {
+        let el = e.target.parentElement;
+        if (el.className === 'layer') {
+            TweenMax.to(el, .5, {
+                opacity: 0
+            });
+        }
+    });
+
+    /**
      * Hover Animation for Portfolio 
      */
     titleList.addEventListener('mouseover', (e) => {
         let eventTarget = e.target;
-        if(eventTarget.nodeName === 'A') {
+        if(eventTarget.nodeName === 'A' && eventTarget.className === 'link-medium') {
             let elementTitle = eventTarget.innerText;
             let target = portfolio.filter(item => item.title === elementTitle);
             let borderWidth = eventTarget.offsetWidth;
@@ -170,7 +191,7 @@
 
     titleList.addEventListener('mouseout', (e) => {
         let eventTarget = e.target;
-        if(eventTarget.nodeName === 'A') {
+        if (eventTarget.nodeName === 'A' && eventTarget.className === 'link-medium') {
             let border = e.target.nextElementSibling;
             TweenMax.to(border, 1, {
                 width: 0
