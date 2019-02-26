@@ -5,7 +5,7 @@
 *date 2019-01-08
 *@version 1.0
 *
-*@description 
+*@description Portfolio site
 */
 
 (function() {
@@ -23,22 +23,6 @@
     // Form Section
     const submitBtn = document.getElementById('submitBtn');
     let scroll = false;
-    // const position = $(window).scrollTop();
-    $(window).scroll(() => {
-        if(!scroll) {
-            $('#stickyHeader').css('display', 'flex'); 
-            scroll = true;
-        }
-    });
-
-    var navOffset = $('#stickyHeader').innerHeight() - 20;
-
-    $("nav a[href^='#']").click(function() {
-        var idPosNav = $($(this).attr('href')).offset().top - navOffset;
-        $("body, html").animate({
-            scrollTop: idPosNav
-        }, 1000);
-    });
 
     class Portfolio {
         constructor(title, images, description, skills) {
@@ -124,6 +108,25 @@
     });
 
     /**
+     * Scroll Animation
+     */
+    $(window).scroll(() => {
+        if (!scroll) {
+            $('#stickyHeader').css('display', 'flex');
+            scroll = true;
+        }
+    });
+
+    let navOffset = $('#stickyHeader').innerHeight() - 30;
+
+    $("nav a[href^='#']").click(function () {
+        let offset = $($(this).attr('href')).offset().top - navOffset;
+        $("body, html").animate({
+            scrollTop: offset
+        }, 1000);
+    });
+
+    /**
      * Hover Animation on titles in mobile
      */
     $('.skills-mobile').on('mouseover', (e) => {
@@ -186,7 +189,6 @@
                 opacity: 1
             });
         }
-        
     });
 
     titleList.addEventListener('mouseout', (e) => {
@@ -204,7 +206,6 @@
      */
 
     $('#submitBtn').on('click', function(e) {
-
         e.preventDefault();
 
         let name = $('#name').val();

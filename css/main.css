@@ -274,8 +274,7 @@ nav {
       flex-wrap: wrap;
       justify-content: center;
       height: 100%;
-      align-items: center;
-      align-content: center; }
+      align-content: flex-end; }
       .mobile-portfolio-wrapper .layer a p {
         color: #fff;
         font-size: 1.2em;
