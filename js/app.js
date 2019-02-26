@@ -2,10 +2,8 @@
 *@file app.js
 *
 *@author Takuya Hirata - 100688080
-*date 2018-05-08
+*date 2019-01-08
 *@version 1.0
-*
-*@purpose Portfolio
 *
 *@description 
 */
@@ -133,7 +131,7 @@
         if(eventTarget.nodeName === 'A') {
             let elementTitle = eventTarget.innerText;
             let target = portfolio.filter(item => item.title === elementTitle);
-            let borderWidth = elementTitle.length * 12.5;
+            let borderWidth = eventTarget.offsetWidth;
             let border = eventTarget.nextElementSibling;
             let title = target[0].title;
             let portfolioHTML = '';

@@ -25,7 +25,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000; }
   @media (min-width: 768px) {
     .header-line1 {
@@ -238,8 +238,6 @@ nav {
     .title-list li {
       font-size: 1.25em;
       padding: 1.5em 0 0 0; } }
-  .title-list li a {
-    display: block; }
 .title-list .border {
   width: 0;
   height: .2em;
