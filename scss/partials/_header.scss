@@ -133,7 +133,7 @@ nav {
     background-image: url('./../img/yo.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 13em;
+    height: 16em;
 
     @include mediaQuery($medium) {
         height: 28em;

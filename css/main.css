@@ -106,7 +106,7 @@ nav {
   background-image: url("./../img/yo.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 13em; }
+  height: 16em; }
   @media (min-width: 768px) {
     .header-animation-container {
       height: 28em; } }
@@ -180,6 +180,8 @@ nav {
     @media (min-width: 992px) {
       .education h3, .experience h3 {
         font-size: 1.8em; } }
+  .education .subtitle-css, .experience .subtitle-css {
+    font-weight: 500; }
   .education p, .experience p {
     font-family: "Roboto", sans-serif;
     margin-bottom: .3em; }
