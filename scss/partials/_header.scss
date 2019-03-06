@@ -39,21 +39,6 @@ object {
     height: 100%;
 }
 
-// .name {  
-//     font-size: 1.5em;
-//     margin-left: .4em;
-//     font-weight: 600;   
-//     color: #fff;
-
-//     @include mediaQuery($medium) {
-//         align-self: center;
-//     }
-
-//     @include mediaQuery($large) {
-//         font-size: 2em;
-//     }
-// }
-
 .hamburger-menu {
     margin-left: auto;
     font-size: 1.45em;
@@ -130,7 +115,7 @@ nav {
 
 
 .header-animation-container {
-    background-image: url('../img/yo.gif');
+    background-image: url('../img/takuya-neon.gif');
     background-size: cover;
     background-repeat: no-repeat;
     height: 16em;
