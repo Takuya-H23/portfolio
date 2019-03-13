@@ -1,3 +1,7 @@
+@font-face {
+    src: url('./../font/beon-webfont.ttf');  
+    font-family: 'Beon';
+}
 // Colors=========================================
 $header: #000;
 $primary-background-color: #f9f9f9;
@@ -9,8 +13,10 @@ $secondary-font-color: #727171;
 $border: #b4b4b4;
 // $border2: #dcdcdc;
 // Font Family=========================================
-$secondary-font-family: 'Poppins', sans-serif;
 $primary-font-family: 'Roboto',sans-serif;
+$secondary-font-family: 'Poppins', sans-serif;
+$gif-font-family: 'Beon';
+
 
 // Break Point==========================================
 $medium: 768px;

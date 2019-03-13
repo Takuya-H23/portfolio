@@ -15,18 +15,19 @@
     }
 
     & h2 {
-        font-family: $primary-font-family;
+        font-family: $gif-font-family;
+        font-weight: bold;
         padding-bottom: .5em;
         border-bottom: 2px solid $border;
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 700;
 
         @include mediaQuery($medium) {
-            font-size: 1.8em;
+            font-size: 2em;
         }
 
         @include mediaQuery($large) {
-            font-size: 2.2em;
+            font-size: 2.4em;
         }
     }
 }

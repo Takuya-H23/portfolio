@@ -18,7 +18,7 @@
     & li {
         padding: 1em 0 0 0;
         color: $primary-font-color;
-        font-family: $primary-font-family;
+        font-family: $secondary-font-family;
         @include mediaQuery($medium) {
             font-size: 1.1em;
         }

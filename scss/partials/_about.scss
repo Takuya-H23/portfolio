@@ -56,13 +56,16 @@
      }
 
     & h3 {
+        font-family: $gif-font-family;
+        font-weight: bold;
         margin-bottom: 1em;
+        font-size: 1.4em;
         @include mediaQuery($medium) {
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
 
         @include mediaQuery($large) {
-            font-size: 1.8em;
+            font-size: 1.9em;
         }
     }
 
@@ -71,8 +74,8 @@
     }
 
     & p {
-        font-family: $primary-font-family;
-        margin-bottom: .3em;
+        font-family: $secondary-font-family;
+        margin-bottom: .5em;
         @include mediaQuery($medium) {
             font-size: 1.2em;
         }
