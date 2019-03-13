@@ -5,14 +5,15 @@
   box-sizing: border-box; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #000; }
 
 h3 {
   font-size: 1.1em; }
 
 a {
   text-decoration: none;
-  color: #727171; }
+  color: rgba(255, 255, 255, 0.95); }
 
 header {
   background-color: #000;
@@ -61,8 +62,8 @@ nav {
   width: 250px;
   height: 500px;
   top: 0;
-  background-color: #f9f9f9;
-  color: #908f8f; }
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.95); }
   @media (min-width: 768px) {
     nav {
       position: static;
@@ -117,7 +118,7 @@ nav {
       height: 55em; } }
 
 .about {
-  color: #908f8f;
+  color: rgba(255, 255, 255, 0.95);
   padding: 1.5em; }
   @media (min-width: 992px) {
     .about {
@@ -208,7 +209,7 @@ nav {
   margin-bottom: 1.5em; }
 
 .portfolio {
-  color: #908f8f;
+  color: rgba(255, 255, 255, 0.95);
   padding: 1.5em; }
   @media (min-width: 992px) {
     .portfolio {
@@ -238,7 +239,7 @@ nav {
 
 .title-list li {
   padding: 1em 0 0 0;
-  color: #908f8f;
+  color: rgba(255, 255, 255, 0.95);
   font-family: "Poppins", sans-serif; }
   @media (min-width: 768px) {
     .title-list li {
@@ -285,7 +286,6 @@ nav {
       height: 100%;
       align-content: flex-end; }
       .mobile-portfolio-wrapper .layer a p {
-        color: #fff;
         font-size: 1.2em;
         margin-right: .5em;
         margin-bottom: .5em; }
@@ -341,7 +341,7 @@ nav {
   .skills-wrapper span {
     display: inline-block;
     padding: .3em;
-    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.5);
     border-radius: 5% 5%;
     margin-bottom: .5em;
     margin-right: .3em; }
@@ -351,7 +351,7 @@ nav {
         margin-bottom: .8em; } }
 
 .contact {
-  color: #908f8f;
+  color: rgba(255, 255, 255, 0.95);
   padding: 1.5em; }
   @media (min-width: 992px) {
     .contact {
@@ -382,7 +382,7 @@ nav {
 
 .contact-icon {
   font-size: 2em;
-  color: #908f8f;
+  color: rgba(255, 255, 255, 0.95);
   margin-top: .5em; }
   @media (min-width: 768px) {
     .contact-icon {
@@ -440,7 +440,7 @@ nav {
   width: 70%;
   padding: .5em;
   margin: 1em auto 0;
-  background-color: #908f8f;
+  background-color: rgba(255, 255, 255, 0.95);
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-align: center; }
