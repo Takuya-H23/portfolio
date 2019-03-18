@@ -48,10 +48,10 @@
     ));
 
     portfolio.push(new Portfolio(
-        'GREAT PLACE IN CANADA (Developing)',
-        ['./img/great_place_canada.png', './img/great_place_canada.png'],
-        'Dynamically display great places I have been by creating and serving JSON file in Node.js.',
-        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
+        'Flashcard with Express',
+        ['./img/flashcard1.png', './img/flashcard2.png'],
+        'Create HTML template based on get requests, then serve flashcards using Node.js, Express and Pug',
+        ['JavaScript', 'Node.js', 'Express', 'Pug']
     ));
 
     portfolio.push(new Portfolio(
@@ -131,11 +131,19 @@
      */
     $('.skills-mobile').on('mouseover', (e) => {
         let el = e.target.parentElement;
+        // let title = el.previousElementSibling.lastElementChild;
+        // console.log(title);
+
         if(el.className === 'layer') {
             TweenMax.to(el, .5, {
                 opacity: 1
             });
         }
+
+        // TweenMax.to(title, .5, {
+        //     delay: .2,
+        //     opacity: 1
+        // });
     });
 
     $('.skills-mobile').on('mouseout', (e) => {

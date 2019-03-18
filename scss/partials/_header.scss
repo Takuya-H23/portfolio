@@ -113,15 +113,14 @@ nav {
     }
 }
 
-
 .header-animation-container {
     background-image: url('../img/takuya-neon.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 16em;
+    min-height: 20em;
 
     @include mediaQuery($medium) {
-        height: 28em;
+        height: 30em;
     }
 
     @include mediaQuery($large) {
