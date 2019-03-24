@@ -128,13 +128,13 @@
 .thumbnail-wrapper {
     @include mediaQuery($medium) {
         display: grid;
-        grid-template-columns: repeat(2, 175px);
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
         grid-gap: .5em;
         margin-top: 1em;
     }
 
     @include mediaQuery($large) {
-        grid-template-columns: repeat(2, 300px); 
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); 
     }
 
     & img {
