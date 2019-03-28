@@ -74,6 +74,13 @@
         'Data visualization project to display Lakeridge projects using D3.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'D3']
     ));
+
+    portfolio.push(new Portfolio(
+        'YOKOHAMA SNOWBOARDING',
+        ['./img/yokohama1.png', './img/yokohama2.png'],
+        'Branding a snowboarding brand. Design and front-end web development.',
+        ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Illustrator', 'Photoshop']
+    ));
     
     /**
      *  Hamburger Menu Animation

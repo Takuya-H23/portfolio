@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    margin: 0;
+}
+
+main {
+    height: auto;
+    background:rgba(247, 247, 247, 0.8);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.4rem;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+/* header------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 0px rgba(80, 80, 80, 0.25);
+}
+
+header .logo {
+    width: 300px;
+}
+
+header img {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+header li {
+    background-color:rgba(48, 11, 228, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px 50px;
+    width: 6rem;
+    text-align: center;
+    transition: opacity .5s ease-out;
+}
+
+header li:hover {
+    opacity: .6;
+}
+
+header li a {
+    color: #fff;
+}
+
+header li:nth-child(2) {
+   margin: 0 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* .yokohama------------------------------------------------------------------------- */
+
+.yokohama {
+    background: url('./../img/mountains.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 44rem;
+    position: relative;
+}
+
+.ykhInfo {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    color: rgb(255, 255, 255);
+}
+
+.ykhMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.ykhMsg p, .ykhInfo p {
+    font-size: 1.3rem;
+}
+
+/* .mainWrapper----------------------------------------------------------------------- */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 3rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pWrapper {
+    padding: 2rem;
+}
+
+.mainWrapper div {
+    flex-basis: 50%;
+}
+
+.mainWrapper p {
+    font-size: 1.5rem;
+}
+
+.mainWrapper a, .flex1 a {
+    background: rgba(48, 11, 228, 0.85);
+    padding: .8rem;
+    color: #fff;
+    display: inline-block;
+    margin-top: 2rem;
+    text-align: center;
+    transition: padding .4s ease-out;
+    border-radius: 20px 20px;
+}
+
+.mainWrapper a:hover {
+    padding: .9rem 1.5rem;
+    background-color: rgba(48, 11, 228, 0.6);
+}
+
+.snowboardContainer img {
+    padding-left: 8rem;
+    width: 90%;
+}
+
+.tshirtContainer img {
+    padding-left: 2rem;
+    width: 85%;
+}
+
+.box3 {
+    order: 1;
+    padding-left: 6rem;
+}
+
+.boards {
+    position: relative;
+    height: 25rem;
+    margin-top: 3rem;
+}
+
+.boards img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.blueBoard {
+    top: 41%;
+    left: 40vw;
+    width: 20%;
+}
+
+.blackBoard {
+    top: 41%;
+    left: 60vw;
+    width: 20%;
+}
+
+.whiteT {
+    top: 55%;
+    left: 20vw;
+    width: 20%;
+}
+
+.blueT {
+    top: 55%;
+    left: 80vw;
+    width: 20%;
+}
+
+.yokoLogo {
+    width: 30%;
+    left: 50%;
+    top: 105%;
+}
+
+.size {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border-radius: 50% 50%;
+    background: rgba(0,0,0, .7);
+    color: #fff;
+    text-align: center;
+}
+
+/* footer------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    background: rgba(0, 0, 0, .85);
+    color: #fff;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    margin-top: 10rem;
+}
+
+footer div {
+    flex: 25%;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* products.html-------------------------------------------------------------------- */
+
+.productsPage {
+    background: url('./../img/product_header.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 44rem;
+}
+
+
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex1>div {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+}
+
+.flex1 .titleBox {
+    z-index: 100;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.boardP {
+    margin-bottom: 9rem;
+}
+
+.tshirtP {
+    margin-bottom: 2rem;
+}
+
+.sbContainer img {
+    width: 100%;
+}
+.sbContainer a {
+    margin-top: 0;
+}
+
+.productContainer img {
+    width: 100%;
+}
+
+.tshirtA a {
+    margin-top: 3.5rem;
+}
+
+.flex1 p {
+    font-size: 1.3rem;
+}
+
+.flex1 a {
+    width: 6rem;
+    transition: width .4s ease-out;
+}
+
+.flex1 a:hover {
+    width: 8rem;
+    background: rgba(48, 11, 228, 0.6);
+}
+
+.flexRow2 {
+    margin-bottom: 10rem;
+}
+
+.twitter {
+    margin: 0 .5rem;
+}
+
+/* media queries----------------------------------------------------------- */
+
+@media(max-width: 1400px) {
+    .boards {
+        display: none;
+    }
+}
+
+@media(max-width: 1390px) {
+    footer {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .boardP{
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .yokohama {
+        height: 38rem;
+    }
+    .snowboardContainer img {
+        padding-left: 6.5rem;
+    }
+
+
+    .boardP {
+        margin-bottom: 5rem;
+    }
+
+    .tshirtP {
+         margin-bottom: 0rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .yokohama {
+        height: 35rem;
+    }
+    .snowboardContainer img {
+        padding-left: 6.5rem;
+    }
+
+    .productsPage .ykhMsg p {
+        line-height: 25px;
+    }
+
+    .mainWrapper .box3 {
+        margin-top: 3rem;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .yokohama {
+        height: 35rem;
+    }
+    .mainWrapper {
+        padding: 3rem;
+    }
+    .snowboardContainer img {
+        padding-left: 3rem;
+    }
+    .tshirtConteiner img {
+        padding-left: 3rem;
+    }
+
+    .mainWrapper p {
+        font-size: 1.3rem;
+    }
+
+    .flex1 .titleBox {
+        flex: 100%;
+    }
+
+    .tshirt-heading {
+        order: -1;
+    }
+
+    footer {
+        height: 16rem;
+    }
+    footer div {
+        flex: 50%;
+    }
+}
+
+@media(max-width: 627px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        margin-top: 1rem;
+    }
+
+    header li:last-child {
+        margin-right: 0rem;
+    }
+
+    .yokohama {
+        height: 30rem;
+    }
+    .yokohama h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .mainWrapper {
+        padding: 1rem;
+        flex-direction: column;
+        align-content: center;
+    }
+    .mainWrapper div {
+        flex: 100%;
+        margin: 0;
+    }
+    .mainWrapper .box3 {
+        order: 0;
+        padding-left: 0;
+    }
+
+    .boardP {
+        margin-bottom: 1rem;
+    }
+
+    .snowboardContainer img, .tshirtConteiner img {
+        padding-left: 1rem;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        padding-bottom: 0;
+        padding-top: 1rem;
+    }
+
+    header li {
+        font-size: .8rem;
+    }
+    header img {
+        margin: 0 auto;
+    }
+    .yokohama {
+        height: 28rem;
+        background-size: cover;
+    }
+
+    .mainWrapper p {
+        font-size: 1rem;
+    }
+    
+    .snowboardContainer img, .tshirtConteiner img {
+        padding: 0 2rem;
+    }
+
+    .flex1 div {
+        flex: 100%;
+    }
+    
+    .tshirtContainer img {
+        padding-left: 4rem;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .productFooter {
+        margin-top: 0rem;
+    }
+
+    footer div {
+        flex: 100%;
+    }
+}
