@@ -48,7 +48,7 @@
     ));
 
     portfolio.push(new Portfolio(
-        'Flashcard with Express',
+        'FLASHCARDS WITH EXPRESS',
         ['./img/flashcard1.png', './img/flashcard2.png'],
         'Create HTML template based on get requests, then serve flashcards using Node.js, Express and Pug',
         ['JavaScript', 'Node.js', 'Express', 'Pug']
@@ -80,6 +80,20 @@
         ['./img/yokohama1.png', './img/yokohama2.png'],
         'Branding a snowboarding brand. Design and front-end web development.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Illustrator', 'Photoshop']
+    ));
+
+    portfolio.push(new Portfolio(
+        'DURHAM TAXES HUB',
+        ['./img/tax1.png', './img/tax2.png'],
+        'Responsible "How to Qualify" and "Location" section using wordpress.',
+        ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP', 'Wordpress']
+    ));
+
+    portfolio.push(new Portfolio(
+        'MAD MOVIES',
+        ['./img/movies.png', './img/movies2.png'],
+        'Responsible front end development. Dynamic movie site.',
+        ['HTML', 'CSS', 'JavaScript', 'jQuery']
     ));
     
     /**
