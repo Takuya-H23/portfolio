@@ -34,13 +34,6 @@
     }
 
     portfolio.push(new Portfolio(
-        'MAD XSCAPE ROOM (Developing)',
-        ['./img/main_logo.jpg', './img/main_logo.jpg'],
-        'MAD Xcsape Room project for Durham College. I was responsible for creating a dynamic leaderborad page.',
-        ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Photoshop']
-    ));
-
-    portfolio.push(new Portfolio(
         'REAL TIME CHAT APPLICATION',
         ['./img/chat2.png', './img/chat1.png'],
         'Real time chat application using Node.js and Express.',
