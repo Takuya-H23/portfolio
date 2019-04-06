@@ -95,6 +95,20 @@
         'Responsible front end development. Dynamic movie site.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery']
     ));
+
+    portfolio.push(new Portfolio(
+        'EASY GROCERIES',
+        ['./img/grocery.png', './img/grocery2.png'],
+        'Responsible front end development. Dynamic grocery site.',
+        ['HTML', 'CSS', 'JavaScript', 'jQuery']
+    ));
+
+    portfolio.push(new Portfolio(
+        'BOOKWORM',
+        ['./img/bookworm.png', './img/bookworm2.png'],
+        'User authentication with Node.js and MongoDB',
+        ['Node.js', 'Express', 'MongoDB', 'Pug']
+    ));
     
     /**
      *  Hamburger Menu Animation
