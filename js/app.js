@@ -76,20 +76,6 @@
     ));
 
     portfolio.push(new Portfolio(
-        'DURHAM TAXES HUB',
-        ['./img/tax1.png', './img/tax2.png'],
-        'Responsible "How to Qualify" and "Location" section using wordpress.',
-        ['HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP', 'Wordpress']
-    ));
-
-    portfolio.push(new Portfolio(
-        'MAD MOVIES',
-        ['./img/movies.png', './img/movies2.png'],
-        'Responsible front end development. Dynamic movie site.',
-        ['HTML', 'CSS', 'JavaScript', 'jQuery']
-    ));
-
-    portfolio.push(new Portfolio(
         'EASY GROCERIES',
         ['./img/grocery.png', './img/grocery2.png'],
         'Responsible front end development. Dynamic grocery site.',
