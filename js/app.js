@@ -88,6 +88,13 @@
         'User authentication with Node.js and MongoDB',
         ['Node.js', 'Express', 'MongoDB', 'Pug']
     ));
+
+    portfolio.push(new Portfolio(
+        'RSVP',
+        ['./img/rsvp1.png', './img/rsvp2.png'],
+        'RSVP Application using React',
+        ['JavaScript', 'React.js']
+    ));
     
     /**
      *  Hamburger Menu Animation

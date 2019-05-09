@@ -71,6 +71,7 @@
 
     .subtitle-css {
         font-weight: 500;
+        font-style: normal;
     }
 
     & p {
@@ -89,6 +90,12 @@
 .education-wrapper {
     margin-bottom: 1em;
 
+    & p {
+        line-height: 1.5em;
+        font-style: italic;
+        font-size: 1em;
+    }
+
     @include mediaQuery($medium) {
         margin-top: 1.3em;
     }
@@ -96,4 +103,10 @@
 
 .job-wrapper {
     margin-bottom: 1.5em;
+
+    & p {
+        line-height: 1.5em;
+        font-style: italic;
+        font-size: 1em;
+    }
 }

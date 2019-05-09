@@ -189,7 +189,8 @@ nav {
       .education h3, .experience h3 {
         font-size: 1.9em; } }
   .education .subtitle-css, .experience .subtitle-css {
-    font-weight: 500; }
+    font-weight: 500;
+    font-style: normal; }
   .education p, .experience p {
     font-family: "Poppins", sans-serif;
     margin-bottom: .5em; }
@@ -202,12 +203,20 @@ nav {
 
 .education-wrapper {
   margin-bottom: 1em; }
+  .education-wrapper p {
+    line-height: 1.5em;
+    font-style: italic;
+    font-size: 1em; }
   @media (min-width: 768px) {
     .education-wrapper {
       margin-top: 1.3em; } }
 
 .job-wrapper {
   margin-bottom: 1.5em; }
+  .job-wrapper p {
+    line-height: 1.5em;
+    font-style: italic;
+    font-size: 1em; }
 
 .portfolio {
   color: rgba(255, 255, 255, 0.95);
