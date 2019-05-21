@@ -36,7 +36,7 @@
     portfolio.push(new Portfolio(
         'MY EDUCATION',
         ['./img/my_education.png', './img/my_education2.png'],
-        'Rect app to show my education',
+        'A Single Page Application (SPA) with Treehouse API',
         ['HTML', 'CSS', 'JavaScript', 'React']
     ));
 
