@@ -34,6 +34,13 @@
     }
 
     portfolio.push(new Portfolio(
+        'MY EDUCATION',
+        ['./img/my_education.png', './img/my_education2.png'],
+        'Rect app to show my education',
+        ['HTML', 'CSS', 'JavaScript', 'React']
+    ));
+
+    portfolio.push(new Portfolio(
         'REAL TIME CHAT APPLICATION',
         ['./img/chat2.png', './img/chat1.png'],
         'Real time chat application using Node.js and Express.',
@@ -59,13 +66,6 @@
         ['./img/languages.png', './img/skills.png'],
         'Infographic project to show what front-end web developers do.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Illustrator']
-    ));
-
-    portfolio.push(new Portfolio(
-        'LAKERIDGE HEALTH',
-        ['./img/lakeridge1.png', './img/lakeridge2.png'],
-        'Data visualization project to display Lakeridge projects using D3.',
-        ['HTML', 'CSS', 'JavaScript', 'jQuery', 'D3']
     ));
 
     portfolio.push(new Portfolio(
