@@ -48,13 +48,6 @@
     ));
 
     portfolio.push(new Portfolio(
-        'FLASHCARDS WITH EXPRESS',
-        ['./img/flashcard1.png', './img/flashcard2.png'],
-        'Create HTML template based on get requests, then serve flashcards using Node.js, Express and Pug',
-        ['JavaScript', 'Node.js', 'Express', 'Pug']
-    ));
-
-    portfolio.push(new Portfolio(
         'JS GAMING',
         ['./img/rps.png', './img/memorycard.png'],
         'Rock Paper Scissors and Memory Card Game with svg animation.',
@@ -80,20 +73,6 @@
         ['./img/grocery.png', './img/grocery2.png'],
         'Responsible front end development. Dynamic grocery site.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery']
-    ));
-
-    portfolio.push(new Portfolio(
-        'BOOKWORM',
-        ['./img/bookworm.png', './img/bookworm2.png'],
-        'User authentication with Node.js and MongoDB',
-        ['Node.js', 'Express', 'MongoDB', 'Pug']
-    ));
-
-    portfolio.push(new Portfolio(
-        'RSVP',
-        ['./img/rsvp1.png', './img/rsvp2.png'],
-        'RSVP Application using React',
-        ['JavaScript', 'React.js']
     ));
     
     /**
