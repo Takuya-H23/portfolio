@@ -81,6 +81,9 @@
             draw(ST1);
             setOffset(ST2, ST2_LENGTH);
             draw(ST2);
+
+            console.log(ST1_LENGTH);
+            console.log(ST2_LENGTH);
         ]]>
     </script>
 </svg>
