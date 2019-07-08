@@ -34,20 +34,6 @@
     }
 
     portfolio.push(new Portfolio(
-        'MY EDUCATION',
-        ['./img/my_education.png', './img/my_education2.png'],
-        'Rect app to show my education',
-        ['HTML', 'CSS', 'JavaScript', 'React']
-    ));
-
-    portfolio.push(new Portfolio(
-        'REAL TIME CHAT APPLICATION',
-        ['./img/chat2.png', './img/chat1.png'],
-        'Real time chat application using Node.js and Express.',
-        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
-    ));
-
-    portfolio.push(new Portfolio(
         'JS GAMING',
         ['./img/rps.png', './img/memorycard.png'],
         'Rock Paper Scissors and Memory Card Game with svg animation.',
