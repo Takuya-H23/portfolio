@@ -34,27 +34,6 @@
     }
 
     portfolio.push(new Portfolio(
-        'MY EDUCATION',
-        ['./img/my_education.png', './img/my_education2.png'],
-        'A Single Page Application (SPA) with React and an API',
-        ['HTML', 'CSS', 'JavaScript', 'React']
-    ));
-
-    portfolio.push(new Portfolio(
-        'REAL TIME CHAT APPLICATION',
-        ['./img/chat2.png', './img/chat1.png'],
-        'Real time chat application using Node.js and Express.',
-        ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express']
-    ));
-
-    portfolio.push(new Portfolio(
-        'FLASHCARDS WITH EXPRESS',
-        ['./img/flashcard1.png', './img/flashcard2.png'],
-        'Create HTML template based on get requests, then serve flashcards using Node.js, Express and Pug',
-        ['JavaScript', 'Node.js', 'Express', 'Pug']
-    ));
-
-    portfolio.push(new Portfolio(
         'JS GAMING',
         ['./img/rps.png', './img/memorycard.png'],
         'Rock Paper Scissors and Memory Card Game with svg animation.',
@@ -80,20 +59,6 @@
         ['./img/grocery.png', './img/grocery2.png'],
         'Responsible front end development. Dynamic grocery site.',
         ['HTML', 'CSS', 'JavaScript', 'jQuery']
-    ));
-
-    portfolio.push(new Portfolio(
-        'BOOKWORM',
-        ['./img/bookworm.png', './img/bookworm2.png'],
-        'User authentication with Node.js and MongoDB',
-        ['Node.js', 'Express', 'MongoDB', 'Pug']
-    ));
-
-    portfolio.push(new Portfolio(
-        'RSVP',
-        ['./img/rsvp1.png', './img/rsvp2.png'],
-        'RSVP Application using React',
-        ['JavaScript', 'React.js']
     ));
     
     /**
